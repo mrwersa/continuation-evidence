@@ -1,0 +1,17 @@
+% Generated comparison, checked by compare_recovery.py --check.
+\begin{table}[htbp]
+\centering
+\caption{Offline recovery comparison after consuming 600 under a strict
+1,000 threshold. Each column uses a separate run. Admitting 300 preserves
+useful work, while admitting 600 makes the mandate total 1,200.}
+\label{tab:recovery}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Strategy & Admits next 300 & Admits next 600 \\
+\midrule
+Refuse & No & No \\
+Fresh recovery & Yes & Yes \\
+Carry & Yes & No \\
+\bottomrule
+\end{tabular}
+\end{table}

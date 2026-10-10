@@ -1,0 +1,3636 @@
+{
+  "statuses": {
+    "complete": 90
+  },
+  "arms": {
+    "no_update": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "300, 200": 10
+      },
+      "patterns": {
+        "A, R": 10
+      },
+      "used": {
+        "900, 900": 10
+      }
+    },
+    "identical": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "300, 200": 10
+      },
+      "patterns": {
+        "A, R": 10
+      },
+      "used": {
+        "900, 900": 10
+      }
+    },
+    "whitespace": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "300, 200": 10
+      },
+      "patterns": {
+        "A, R": 10
+      },
+      "used": {
+        "900, 900": 10
+      }
+    },
+    "tighten700": {
+      "planned": 20,
+      "complete": 20,
+      "statuses": {
+        "complete": 20
+      },
+      "requests": {
+        "50, 100": 20
+      },
+      "patterns": {
+        "A, R": 20
+      },
+      "used": {
+        "650, 650": 20
+      }
+    },
+    "tighten500": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "1, 50": 10
+      },
+      "patterns": {
+        "R, R": 10
+      },
+      "used": {
+        "600, 600": 10
+      }
+    },
+    "rename_policy": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "300, 200": 10
+      },
+      "patterns": {
+        "A, A": 10
+      },
+      "used": {
+        "300, 500": 10
+      }
+    },
+    "fresh1000": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "300, 200": 10
+      },
+      "patterns": {
+        "A, A": 10
+      },
+      "used": {
+        "300, 500": 10
+      }
+    },
+    "fresh700": {
+      "planned": 10,
+      "complete": 10,
+      "statuses": {
+        "complete": 10
+      },
+      "requests": {
+        "50, 100": 10
+      },
+      "patterns": {
+        "A, A": 10
+      },
+      "used": {
+        "50, 150": 10
+      }
+    }
+  },
+  "tool_calls": 365,
+  "tool_outcomes": {
+    "A": 263,
+    "R": 102
+  },
+  "responses": 367,
+  "backend_records": 265,
+  "ready_revisions": 110,
+  "abort": [],
+  "trials": [
+    {
+      "id": "b1-no_update-01",
+      "arm": "no_update",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "2",
+        "task": "key-004",
+        "start": 1791625281.6392324,
+        "end": 1791625281.7185938
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "2",
+          "task": "key-004",
+          "start": 1791625404.586469,
+          "end": 1791625404.660291
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "2",
+          "task": "key-004",
+          "start": 1791625407.4854715,
+          "end": 1791625407.5393035
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-05",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "2",
+        "task": "key-005",
+        "start": 1791625410.2667706,
+        "end": 1791625410.3467479
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "3",
+          "task": "key-005",
+          "start": 1791625499.1651864,
+          "end": 1791625499.236089
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "3",
+          "task": "key-005",
+          "start": 1791625501.8401797,
+          "end": 1791625501.8811488
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh700-05",
+      "arm": "fresh700",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "3",
+          "task": "key-007",
+          "start": 1791625504.7132344,
+          "end": 1791625504.8679395
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "3",
+          "task": "key-007",
+          "start": 1791625507.7577221,
+          "end": 1791625507.8258624
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten500-02",
+      "arm": "tighten500",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "4",
+        "task": "key-009",
+        "start": 1791625549.3847702,
+        "end": 1791625549.4554827
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "5",
+          "task": "key-009",
+          "start": 1791625622.0283113,
+          "end": 1791625622.0634797
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "5",
+          "task": "key-009",
+          "start": 1791625624.971555,
+          "end": 1791625625.0067725
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-09",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "6",
+        "task": "key-012",
+        "start": 1791625682.2833357,
+        "end": 1791625682.3620193
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "7",
+          "task": "key-012",
+          "start": 1791625739.459435,
+          "end": 1791625739.546267
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "7",
+          "task": "key-012",
+          "start": 1791625742.489062,
+          "end": 1791625742.5338347
+        }
+      ]
+    },
+    {
+      "id": "b1-no_update-03",
+      "arm": "no_update",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "8",
+        "task": "key-015",
+        "start": 1791625799.309391,
+        "end": 1791625799.3724232
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "8",
+          "task": "key-015",
+          "start": 1791625922.1441336,
+          "end": 1791625922.284029
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "8",
+          "task": "key-015",
+          "start": 1791625924.960809,
+          "end": 1791625925.064442
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh1000-01",
+      "arm": "fresh1000",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "8",
+          "task": "key-016",
+          "start": 1791625927.8181992,
+          "end": 1791625927.8953853
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "8",
+          "task": "key-016",
+          "start": 1791625930.656238,
+          "end": 1791625930.7321115
+        }
+      ]
+    },
+    {
+      "id": "b1-whitespace-02",
+      "arm": "whitespace",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "8",
+        "task": "key-017",
+        "start": 1791625933.5242207,
+        "end": 1791625933.5844672
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "9",
+          "task": "key-017",
+          "start": 1791625975.1895826,
+          "end": 1791625975.2632113
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "9",
+          "task": "key-017",
+          "start": 1791625977.8870158,
+          "end": 1791625977.9298382
+        }
+      ]
+    },
+    {
+      "id": "b1-no_update-05",
+      "arm": "no_update",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "10",
+        "task": "key-020",
+        "start": 1791626034.5747023,
+        "end": 1791626034.643516
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "10",
+          "task": "key-020",
+          "start": 1791626157.6385515,
+          "end": 1791626157.7660105
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "10",
+          "task": "key-020",
+          "start": 1791626160.4494236,
+          "end": 1791626160.4946535
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-10",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "10",
+        "task": "key-021",
+        "start": 1791626163.3152163,
+        "end": 1791626163.4436522
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "11",
+          "task": "key-021",
+          "start": 1791626220.3674176,
+          "end": 1791626220.4435167
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "11",
+          "task": "key-021",
+          "start": 1791626223.2332067,
+          "end": 1791626223.2728398
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-08",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "12",
+        "task": "key-024",
+        "start": 1791626280.2998242,
+        "end": 1791626280.376247
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "13",
+          "task": "key-024",
+          "start": 1791626337.6115327,
+          "end": 1791626337.6838012
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "13",
+          "task": "key-024",
+          "start": 1791626340.5536153,
+          "end": 1791626340.5938194
+        }
+      ]
+    },
+    {
+      "id": "b1-whitespace-04",
+      "arm": "whitespace",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "14",
+        "task": "key-027",
+        "start": 1791626397.5993898,
+        "end": 1791626397.72825
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "15",
+          "task": "key-027",
+          "start": 1791626454.5705264,
+          "end": 1791626454.638588
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "15",
+          "task": "key-027",
+          "start": 1791626457.3813386,
+          "end": 1791626457.433065
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-04",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "16",
+        "task": "key-030",
+        "start": 1791626513.9281254,
+        "end": 1791626514.0136852
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "17",
+          "task": "key-030",
+          "start": 1791626571.0515518,
+          "end": 1791626571.1112168
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "17",
+          "task": "key-030",
+          "start": 1791626573.993935,
+          "end": 1791626574.0374672
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh700-04",
+      "arm": "fresh700",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "17",
+          "task": "key-032",
+          "start": 1791626576.8299072,
+          "end": 1791626576.9249895
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "17",
+          "task": "key-032",
+          "start": 1791626579.7228227,
+          "end": 1791626579.8299494
+        }
+      ]
+    },
+    {
+      "id": "b1-identical-03",
+      "arm": "identical",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "18",
+        "task": "key-034",
+        "start": 1791626636.8523352,
+        "end": 1791626636.9515917
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "19",
+          "task": "key-034",
+          "start": 1791626693.5792336,
+          "end": 1791626693.6488943
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "19",
+          "task": "key-034",
+          "start": 1791626696.3417544,
+          "end": 1791626696.3760934
+        }
+      ]
+    },
+    {
+      "id": "b1-no_update-04",
+      "arm": "no_update",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "19",
+        "task": "key-036",
+        "start": 1791626699.0705867,
+        "end": 1791626699.1414762
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "19",
+          "task": "key-036",
+          "start": 1791626821.9795053,
+          "end": 1791626822.1106853
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "19",
+          "task": "key-036",
+          "start": 1791626824.965198,
+          "end": 1791626825.0699577
+        }
+      ]
+    },
+    {
+      "id": "b1-rename_policy-02",
+      "arm": "rename_policy",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "19",
+        "task": "key-037",
+        "start": 1791626827.8999703,
+        "end": 1791626827.9714518
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "20",
+          "task": "key-037",
+          "start": 1791626868.9301326,
+          "end": 1791626868.990292
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "20",
+          "task": "key-037",
+          "start": 1791626871.822725,
+          "end": 1791626871.8914578
+        }
+      ]
+    },
+    {
+      "id": "b1-rename_policy-01",
+      "arm": "rename_policy",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "21",
+        "task": "key-040",
+        "start": 1791626944.0913439,
+        "end": 1791626944.169856
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "22",
+          "task": "key-040",
+          "start": 1791627001.1427405,
+          "end": 1791627001.2121081
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "22",
+          "task": "key-040",
+          "start": 1791627004.1283817,
+          "end": 1791627004.1869934
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-02",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "23",
+        "task": "key-043",
+        "start": 1791627060.9792407,
+        "end": 1791627061.0546865
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "24",
+          "task": "key-043",
+          "start": 1791627117.9342687,
+          "end": 1791627117.997681
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "24",
+          "task": "key-043",
+          "start": 1791627120.8960946,
+          "end": 1791627120.9914536
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh700-02",
+      "arm": "fresh700",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "24",
+          "task": "key-045",
+          "start": 1791627123.781888,
+          "end": 1791627123.8547473
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "24",
+          "task": "key-045",
+          "start": 1791627126.7942927,
+          "end": 1791627126.8668551
+        }
+      ]
+    },
+    {
+      "id": "b1-no_update-02",
+      "arm": "no_update",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "25",
+        "task": "key-047",
+        "start": 1791627183.8000684,
+        "end": 1791627183.8743138
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "25",
+          "task": "key-047",
+          "start": 1791627306.8721051,
+          "end": 1791627307.0123408
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "25",
+          "task": "key-047",
+          "start": 1791627309.7794616,
+          "end": 1791627309.8823793
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-01",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "25",
+        "task": "key-048",
+        "start": 1791627312.627836,
+        "end": 1791627312.7075033
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "26",
+          "task": "key-048",
+          "start": 1791627415.2430873,
+          "end": 1791627415.29229
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "26",
+          "task": "key-048",
+          "start": 1791627417.9664936,
+          "end": 1791627418.0034964
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh700-01",
+      "arm": "fresh700",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "26",
+          "task": "key-050",
+          "start": 1791627420.7200592,
+          "end": 1791627420.7836933
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "26",
+          "task": "key-050",
+          "start": 1791627423.479154,
+          "end": 1791627423.5494
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-06",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "27",
+        "task": "key-052",
+        "start": 1791627480.3013937,
+        "end": 1791627480.3648977
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "28",
+          "task": "key-052",
+          "start": 1791627537.0097628,
+          "end": 1791627537.1232867
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "28",
+          "task": "key-052",
+          "start": 1791627539.8031642,
+          "end": 1791627539.8443453
+        }
+      ]
+    },
+    {
+      "id": "b1-rename_policy-05",
+      "arm": "rename_policy",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "29",
+        "task": "key-055",
+        "start": 1791627596.552259,
+        "end": 1791627596.6270888
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "30",
+          "task": "key-055",
+          "start": 1791627653.2320325,
+          "end": 1791627653.292453
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "30",
+          "task": "key-055",
+          "start": 1791627656.0423207,
+          "end": 1791627656.0925846
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-03",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "31",
+        "task": "key-058",
+        "start": 1791627712.7238698,
+        "end": 1791627712.8032572
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "32",
+          "task": "key-058",
+          "start": 1791627769.5842679,
+          "end": 1791627769.6597683
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "32",
+          "task": "key-058",
+          "start": 1791627772.4457753,
+          "end": 1791627772.485803
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh700-03",
+      "arm": "fresh700",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "32",
+          "task": "key-060",
+          "start": 1791627775.2684538,
+          "end": 1791627775.4080844
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "32",
+          "task": "key-060",
+          "start": 1791627778.1938105,
+          "end": 1791627778.2556868
+        }
+      ]
+    },
+    {
+      "id": "b1-identical-05",
+      "arm": "identical",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "33",
+        "task": "key-062",
+        "start": 1791627834.5920074,
+        "end": 1791627834.650808
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "34",
+          "task": "key-062",
+          "start": 1791627891.138048,
+          "end": 1791627891.2024653
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "34",
+          "task": "key-062",
+          "start": 1791627894.0383651,
+          "end": 1791627894.085183
+        }
+      ]
+    },
+    {
+      "id": "b1-whitespace-01",
+      "arm": "whitespace",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "34",
+        "task": "key-064",
+        "start": 1791627896.8728316,
+        "end": 1791627896.9421258
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "35",
+          "task": "key-064",
+          "start": 1791627954.9663908,
+          "end": 1791627955.0415053
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "35",
+          "task": "key-064",
+          "start": 1791627957.6747487,
+          "end": 1791627957.711605
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten500-03",
+      "arm": "tighten500",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "36",
+        "task": "key-067",
+        "start": 1791628014.4344487,
+        "end": 1791628014.4962358
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "37",
+          "task": "key-067",
+          "start": 1791628071.2378707,
+          "end": 1791628071.2726731
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "37",
+          "task": "key-067",
+          "start": 1791628073.9474013,
+          "end": 1791628073.9809408
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh1000-03",
+      "arm": "fresh1000",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "38",
+          "task": "key-070",
+          "start": 1791628130.6574464,
+          "end": 1791628130.727057
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "38",
+          "task": "key-070",
+          "start": 1791628133.5095751,
+          "end": 1791628133.6233785
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten500-04",
+      "arm": "tighten500",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "38",
+        "task": "key-071",
+        "start": 1791628138.016846,
+        "end": 1791628138.07936
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "39",
+          "task": "key-071",
+          "start": 1791628195.0988452,
+          "end": 1791628195.1335168
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "39",
+          "task": "key-071",
+          "start": 1791628197.8572233,
+          "end": 1791628197.8936212
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten500-01",
+      "arm": "tighten500",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "40",
+        "task": "key-074",
+        "start": 1791628254.8014886,
+        "end": 1791628254.8676748
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "41",
+          "task": "key-074",
+          "start": 1791628311.840544,
+          "end": 1791628311.8741708
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "41",
+          "task": "key-074",
+          "start": 1791628314.5661356,
+          "end": 1791628314.6046004
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh1000-02",
+      "arm": "fresh1000",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "42",
+          "task": "key-077",
+          "start": 1791628371.4352856,
+          "end": 1791628371.4950066
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "42",
+          "task": "key-077",
+          "start": 1791628374.1731608,
+          "end": 1791628374.248779
+        }
+      ]
+    },
+    {
+      "id": "b1-rename_policy-04",
+      "arm": "rename_policy",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "42",
+        "task": "key-078",
+        "start": 1791628376.9212599,
+        "end": 1791628376.9830182
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "43",
+          "task": "key-078",
+          "start": 1791628433.7968252,
+          "end": 1791628433.8771627
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "43",
+          "task": "key-078",
+          "start": 1791628436.73212,
+          "end": 1791628436.7884572
+        }
+      ]
+    },
+    {
+      "id": "b1-rename_policy-03",
+      "arm": "rename_policy",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "44",
+        "task": "key-081",
+        "start": 1791628493.6046357,
+        "end": 1791628493.7204702
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "45",
+          "task": "key-081",
+          "start": 1791628551.6911454,
+          "end": 1791628551.7436981
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "45",
+          "task": "key-081",
+          "start": 1791628554.713509,
+          "end": 1791628554.837761
+        }
+      ]
+    },
+    {
+      "id": "b1-identical-02",
+      "arm": "identical",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "46",
+        "task": "key-084",
+        "start": 1791628611.6938937,
+        "end": 1791628611.7606213
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "47",
+          "task": "key-084",
+          "start": 1791628668.9388595,
+          "end": 1791628669.0022018
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "47",
+          "task": "key-084",
+          "start": 1791628671.6734636,
+          "end": 1791628671.7062516
+        }
+      ]
+    },
+    {
+      "id": "b1-whitespace-05",
+      "arm": "whitespace",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "47",
+        "task": "key-086",
+        "start": 1791628674.3772967,
+        "end": 1791628674.4352922
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "48",
+          "task": "key-086",
+          "start": 1791628730.873741,
+          "end": 1791628730.9283643
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "48",
+          "task": "key-086",
+          "start": 1791628733.9153144,
+          "end": 1791628733.950956
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh1000-04",
+      "arm": "fresh1000",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "49",
+          "task": "key-089",
+          "start": 1791628791.731641,
+          "end": 1791628791.802418
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "49",
+          "task": "key-089",
+          "start": 1791628795.0756724,
+          "end": 1791628795.1371686
+        }
+      ]
+    },
+    {
+      "id": "b1-fresh1000-05",
+      "arm": "fresh1000",
+      "block": 1,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "49",
+          "task": "key-090",
+          "start": 1791628797.9912753,
+          "end": 1791628798.0526316
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "49",
+          "task": "key-090",
+          "start": 1791628800.9232113,
+          "end": 1791628800.9896638
+        }
+      ]
+    },
+    {
+      "id": "b1-identical-01",
+      "arm": "identical",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "49",
+        "task": "key-091",
+        "start": 1791628803.8086073,
+        "end": 1791628803.8679729
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "50",
+          "task": "key-091",
+          "start": 1791628861.220098,
+          "end": 1791628861.2675643
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "50",
+          "task": "key-091",
+          "start": 1791628863.95727,
+          "end": 1791628863.993545
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten700-07",
+      "arm": "tighten700",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "50",
+        "task": "key-093",
+        "start": 1791628866.7248282,
+        "end": 1791628866.7848544
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "51",
+          "task": "key-093",
+          "start": 1791628923.2404199,
+          "end": 1791628923.3006706
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "51",
+          "task": "key-093",
+          "start": 1791628926.5755348,
+          "end": 1791628926.6118953
+        }
+      ]
+    },
+    {
+      "id": "b1-identical-04",
+      "arm": "identical",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "52",
+        "task": "key-096",
+        "start": 1791628983.684801,
+        "end": 1791628983.7610419
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "53",
+          "task": "key-096",
+          "start": 1791629040.1365395,
+          "end": 1791629040.1924772
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "53",
+          "task": "key-096",
+          "start": 1791629042.884283,
+          "end": 1791629042.916944
+        }
+      ]
+    },
+    {
+      "id": "b1-tighten500-05",
+      "arm": "tighten500",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "53",
+        "task": "key-098",
+        "start": 1791629045.7499044,
+        "end": 1791629045.8126903
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "54",
+          "task": "key-098",
+          "start": 1791629102.5511029,
+          "end": 1791629102.6287818
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "54",
+          "task": "key-098",
+          "start": 1791629106.378057,
+          "end": 1791629106.4217792
+        }
+      ]
+    },
+    {
+      "id": "b1-whitespace-03",
+      "arm": "whitespace",
+      "block": 1,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "55",
+        "task": "key-101",
+        "start": 1791629163.4687147,
+        "end": 1791629163.5935802
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "56",
+          "task": "key-101",
+          "start": 1791629220.4064322,
+          "end": 1791629220.4560525
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "56",
+          "task": "key-101",
+          "start": 1791629223.2586148,
+          "end": 1791629223.2932067
+        }
+      ]
+    },
+    {
+      "id": "b2-identical-03",
+      "arm": "identical",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "57",
+        "task": "key-104",
+        "start": 1791629280.2606928,
+        "end": 1791629280.3342392
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "58",
+          "task": "key-104",
+          "start": 1791629336.6401408,
+          "end": 1791629336.6984303
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "58",
+          "task": "key-104",
+          "start": 1791629339.3159873,
+          "end": 1791629339.404903
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-01",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "58",
+        "task": "key-106",
+        "start": 1791629342.2145712,
+        "end": 1791629342.280583
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "59",
+          "task": "key-106",
+          "start": 1791629398.7514663,
+          "end": 1791629398.8036942
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "59",
+          "task": "key-106",
+          "start": 1791629401.3761127,
+          "end": 1791629401.410707
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh700-01",
+      "arm": "fresh700",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "59",
+          "task": "key-108",
+          "start": 1791629403.950513,
+          "end": 1791629404.011478
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "59",
+          "task": "key-108",
+          "start": 1791629406.5325735,
+          "end": 1791629406.5788872
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh1000-04",
+      "arm": "fresh1000",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "60",
+          "task": "key-110",
+          "start": 1791629463.0346744,
+          "end": 1791629463.1028702
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "60",
+          "task": "key-110",
+          "start": 1791629465.670688,
+          "end": 1791629465.7168486
+        }
+      ]
+    },
+    {
+      "id": "b2-no_update-03",
+      "arm": "no_update",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "60",
+        "task": "key-111",
+        "start": 1791629468.3067791,
+        "end": 1791629468.3655508
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "60",
+          "task": "key-111",
+          "start": 1791629591.2441323,
+          "end": 1791629591.3435774
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "60",
+          "task": "key-111",
+          "start": 1791629594.1790097,
+          "end": 1791629594.2231143
+        }
+      ]
+    },
+    {
+      "id": "b2-whitespace-02",
+      "arm": "whitespace",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "60",
+        "task": "key-112",
+        "start": 1791629596.8868933,
+        "end": 1791629596.9439783
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "61",
+          "task": "key-112",
+          "start": 1791629699.3844423,
+          "end": 1791629699.443786
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "61",
+          "task": "key-112",
+          "start": 1791629702.3013165,
+          "end": 1791629702.3413463
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-03",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "62",
+        "task": "key-115",
+        "start": 1791629758.7824996,
+        "end": 1791629758.8389242
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "63",
+          "task": "key-115",
+          "start": 1791629815.4130936,
+          "end": 1791629815.4667068
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "63",
+          "task": "key-115",
+          "start": 1791629818.077459,
+          "end": 1791629818.1137242
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh700-03",
+      "arm": "fresh700",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "63",
+          "task": "key-117",
+          "start": 1791629820.9048107,
+          "end": 1791629820.9640412
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "63",
+          "task": "key-117",
+          "start": 1791629823.62475,
+          "end": 1791629823.7368066
+        }
+      ]
+    },
+    {
+      "id": "b2-rename_policy-05",
+      "arm": "rename_policy",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "64",
+        "task": "key-119",
+        "start": 1791629880.3792794,
+        "end": 1791629880.4430556
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "65",
+          "task": "key-119",
+          "start": 1791629937.0521584,
+          "end": 1791629937.123466
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "65",
+          "task": "key-119",
+          "start": 1791629939.7740843,
+          "end": 1791629939.828415
+        }
+      ]
+    },
+    {
+      "id": "b2-no_update-05",
+      "arm": "no_update",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "66",
+        "task": "key-122",
+        "start": 1791629996.5324516,
+        "end": 1791629996.6019495
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "66",
+          "task": "key-122",
+          "start": 1791630119.2648804,
+          "end": 1791630119.3839939
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "66",
+          "task": "key-122",
+          "start": 1791630122.062166,
+          "end": 1791630122.1515756
+        }
+      ]
+    },
+    {
+      "id": "b2-no_update-02",
+      "arm": "no_update",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "66",
+        "task": "key-123",
+        "start": 1791630124.7875595,
+        "end": 1791630124.8572068
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "66",
+          "task": "key-123",
+          "start": 1791630247.5170825,
+          "end": 1791630247.5900831
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "66",
+          "task": "key-123",
+          "start": 1791630250.2229693,
+          "end": 1791630250.2645288
+        }
+      ]
+    },
+    {
+      "id": "b2-rename_policy-04",
+      "arm": "rename_policy",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "66",
+        "task": "key-124",
+        "start": 1791630253.0221603,
+        "end": 1791630253.099664
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "67",
+          "task": "key-124",
+          "start": 1791630325.2170417,
+          "end": 1791630325.2751641
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "67",
+          "task": "key-124",
+          "start": 1791630327.9357913,
+          "end": 1791630328.0529268
+        }
+      ]
+    },
+    {
+      "id": "b2-identical-05",
+      "arm": "identical",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "68",
+        "task": "key-127",
+        "start": 1791630385.158637,
+        "end": 1791630385.2191057
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "69",
+          "task": "key-127",
+          "start": 1791630442.3735564,
+          "end": 1791630442.4370985
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "69",
+          "task": "key-127",
+          "start": 1791630445.1493359,
+          "end": 1791630445.188488
+        }
+      ]
+    },
+    {
+      "id": "b2-whitespace-05",
+      "arm": "whitespace",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "69",
+        "task": "key-129",
+        "start": 1791630447.8242931,
+        "end": 1791630447.8838449
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "70",
+          "task": "key-129",
+          "start": 1791630504.7636058,
+          "end": 1791630504.8749483
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "70",
+          "task": "key-129",
+          "start": 1791630507.5740132,
+          "end": 1791630507.613382
+        }
+      ]
+    },
+    {
+      "id": "b2-whitespace-01",
+      "arm": "whitespace",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "71",
+        "task": "key-132",
+        "start": 1791630564.5292056,
+        "end": 1791630564.5832384
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "72",
+          "task": "key-132",
+          "start": 1791630621.7734876,
+          "end": 1791630621.8203301
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "72",
+          "task": "key-132",
+          "start": 1791630624.4371588,
+          "end": 1791630624.5270727
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh1000-02",
+      "arm": "fresh1000",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "73",
+          "task": "key-135",
+          "start": 1791630681.481756,
+          "end": 1791630681.5578673
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "73",
+          "task": "key-135",
+          "start": 1791630684.1144943,
+          "end": 1791630684.1799016
+        }
+      ]
+    },
+    {
+      "id": "b2-identical-04",
+      "arm": "identical",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "73",
+        "task": "key-136",
+        "start": 1791630686.9527311,
+        "end": 1791630687.0099344
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "74",
+          "task": "key-136",
+          "start": 1791630743.9829576,
+          "end": 1791630744.0520453
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "74",
+          "task": "key-136",
+          "start": 1791630746.566726,
+          "end": 1791630746.600123
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-07",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "74",
+        "task": "key-138",
+        "start": 1791630749.1688504,
+        "end": 1791630749.2354188
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "75",
+          "task": "key-138",
+          "start": 1791630806.2398267,
+          "end": 1791630806.3090997
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "75",
+          "task": "key-138",
+          "start": 1791630808.8689973,
+          "end": 1791630808.9470723
+        }
+      ]
+    },
+    {
+      "id": "b2-identical-02",
+      "arm": "identical",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "76",
+        "task": "key-141",
+        "start": 1791630865.3217325,
+        "end": 1791630865.3853874
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "77",
+          "task": "key-141",
+          "start": 1791630921.8794487,
+          "end": 1791630921.9738247
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "77",
+          "task": "key-141",
+          "start": 1791630924.5933087,
+          "end": 1791630924.6324208
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-04",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "77",
+        "task": "key-143",
+        "start": 1791630927.220487,
+        "end": 1791630927.2961247
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "78",
+          "task": "key-143",
+          "start": 1791630984.1675534,
+          "end": 1791630984.2539327
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "78",
+          "task": "key-143",
+          "start": 1791630987.010115,
+          "end": 1791630987.0481772
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh700-04",
+      "arm": "fresh700",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "78",
+          "task": "key-145",
+          "start": 1791630989.616783,
+          "end": 1791630989.718265
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "78",
+          "task": "key-145",
+          "start": 1791630992.37215,
+          "end": 1791630992.4361672
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-02",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "79",
+        "task": "key-147",
+        "start": 1791631048.9664066,
+        "end": 1791631049.0273066
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "80",
+          "task": "key-147",
+          "start": 1791631105.946539,
+          "end": 1791631105.9991288
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "80",
+          "task": "key-147",
+          "start": 1791631108.5303843,
+          "end": 1791631108.5719624
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh700-02",
+      "arm": "fresh700",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "80",
+          "task": "key-149",
+          "start": 1791631111.0883033,
+          "end": 1791631111.1535351
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "80",
+          "task": "key-149",
+          "start": 1791631113.6651728,
+          "end": 1791631113.712386
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-09",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "81",
+        "task": "key-151",
+        "start": 1791631170.581038,
+        "end": 1791631170.667096
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "82",
+          "task": "key-151",
+          "start": 1791631227.3211424,
+          "end": 1791631227.39322
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "82",
+          "task": "key-151",
+          "start": 1791631230.0000944,
+          "end": 1791631230.0561538
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh1000-05",
+      "arm": "fresh1000",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "83",
+          "task": "key-154",
+          "start": 1791631286.5774093,
+          "end": 1791631286.682817
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "83",
+          "task": "key-154",
+          "start": 1791631289.123935,
+          "end": 1791631289.1845522
+        }
+      ]
+    },
+    {
+      "id": "b2-no_update-01",
+      "arm": "no_update",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "83",
+        "task": "key-155",
+        "start": 1791631291.7535295,
+        "end": 1791631291.8189888
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "83",
+          "task": "key-155",
+          "start": 1791631414.4359028,
+          "end": 1791631414.5455358
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "83",
+          "task": "key-155",
+          "start": 1791631417.0529583,
+          "end": 1791631417.086145
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-05",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "83",
+        "task": "key-156",
+        "start": 1791631419.6028016,
+        "end": 1791631419.653368
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "84",
+          "task": "key-156",
+          "start": 1791631460.6296625,
+          "end": 1791631460.6757555
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "84",
+          "task": "key-156",
+          "start": 1791631463.8865435,
+          "end": 1791631463.9462903
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh700-05",
+      "arm": "fresh700",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 50,
+          "available": 650,
+          "limit": 700,
+          "revision": "84",
+          "task": "key-158",
+          "start": 1791631466.4381433,
+          "end": 1791631466.5159032
+        },
+        {
+          "outcome": "A",
+          "amount": 100,
+          "used": 150,
+          "available": 550,
+          "limit": 700,
+          "revision": "84",
+          "task": "key-158",
+          "start": 1791631469.919624,
+          "end": 1791631469.9832413
+        }
+      ]
+    },
+    {
+      "id": "b2-rename_policy-03",
+      "arm": "rename_policy",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "85",
+        "task": "key-160",
+        "start": 1791631527.4469774,
+        "end": 1791631527.5038471
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "86",
+          "task": "key-160",
+          "start": 1791631584.6339402,
+          "end": 1791631584.707707
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "86",
+          "task": "key-160",
+          "start": 1791631587.2506056,
+          "end": 1791631587.3138244
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten500-04",
+      "arm": "tighten500",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "87",
+        "task": "key-163",
+        "start": 1791631644.1234322,
+        "end": 1791631644.1971385
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "88",
+          "task": "key-163",
+          "start": 1791631700.9046297,
+          "end": 1791631700.9405613
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "88",
+          "task": "key-163",
+          "start": 1791631703.703134,
+          "end": 1791631703.7428157
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten500-05",
+      "arm": "tighten500",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "89",
+        "task": "key-166",
+        "start": 1791631760.7827802,
+        "end": 1791631760.8366103
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "90",
+          "task": "key-166",
+          "start": 1791631833.8641403,
+          "end": 1791631833.942745
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "90",
+          "task": "key-166",
+          "start": 1791631836.805814,
+          "end": 1791631836.8372076
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh1000-01",
+      "arm": "fresh1000",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "91",
+          "task": "key-169",
+          "start": 1791631893.4318087,
+          "end": 1791631893.5022893
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "91",
+          "task": "key-169",
+          "start": 1791631896.276663,
+          "end": 1791631896.3394856
+        }
+      ]
+    },
+    {
+      "id": "b2-fresh1000-03",
+      "arm": "fresh1000",
+      "block": 2,
+      "status": "complete",
+      "preload": null,
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "91",
+          "task": "key-170",
+          "start": 1791631899.0594254,
+          "end": 1791631899.1154149
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "91",
+          "task": "key-170",
+          "start": 1791631901.8226032,
+          "end": 1791631901.881677
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten500-01",
+      "arm": "tighten500",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "91",
+        "task": "key-171",
+        "start": 1791631904.681565,
+        "end": 1791631904.7408652
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "92",
+          "task": "key-171",
+          "start": 1791631946.610754,
+          "end": 1791631946.650312
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "92",
+          "task": "key-171",
+          "start": 1791631949.3286452,
+          "end": 1791631949.356135
+        }
+      ]
+    },
+    {
+      "id": "b2-no_update-04",
+      "arm": "no_update",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "93",
+        "task": "key-174",
+        "start": 1791632006.6498146,
+        "end": 1791632006.7078147
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "93",
+          "task": "key-174",
+          "start": 1791632129.4541726,
+          "end": 1791632129.5615566
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "93",
+          "task": "key-174",
+          "start": 1791632132.2215567,
+          "end": 1791632132.3278413
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-06",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "93",
+        "task": "key-175",
+        "start": 1791632134.9476593,
+        "end": 1791632135.0042214
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "94",
+          "task": "key-175",
+          "start": 1791632191.8625624,
+          "end": 1791632191.9319084
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "94",
+          "task": "key-175",
+          "start": 1791632194.614665,
+          "end": 1791632194.6474159
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-10",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "95",
+        "task": "key-178",
+        "start": 1791632251.840562,
+        "end": 1791632251.9015398
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "96",
+          "task": "key-178",
+          "start": 1791632309.2086265,
+          "end": 1791632309.281334
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "96",
+          "task": "key-178",
+          "start": 1791632311.8796206,
+          "end": 1791632311.921116
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten500-03",
+      "arm": "tighten500",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "97",
+        "task": "key-181",
+        "start": 1791632369.2513063,
+        "end": 1791632369.3201866
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "98",
+          "task": "key-181",
+          "start": 1791632426.1125429,
+          "end": 1791632426.202522
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "98",
+          "task": "key-181",
+          "start": 1791632428.9146771,
+          "end": 1791632428.947916
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten700-08",
+      "arm": "tighten700",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "99",
+        "task": "key-184",
+        "start": 1791632485.8619592,
+        "end": 1791632485.9161692
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 50,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "100",
+          "task": "key-184",
+          "start": 1791632542.4522238,
+          "end": 1791632542.4980927
+        },
+        {
+          "outcome": "R",
+          "amount": 100,
+          "used": 650,
+          "available": 50,
+          "limit": 700,
+          "revision": "100",
+          "task": "key-184",
+          "start": 1791632545.0724242,
+          "end": 1791632545.1020923
+        }
+      ]
+    },
+    {
+      "id": "b2-rename_policy-01",
+      "arm": "rename_policy",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "101",
+        "task": "key-187",
+        "start": 1791632601.810407,
+        "end": 1791632601.878717
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "102",
+          "task": "key-187",
+          "start": 1791632674.0370495,
+          "end": 1791632674.1422698
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "102",
+          "task": "key-187",
+          "start": 1791632676.778198,
+          "end": 1791632676.8411787
+        }
+      ]
+    },
+    {
+      "id": "b2-whitespace-04",
+      "arm": "whitespace",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "103",
+        "task": "key-190",
+        "start": 1791632733.3811367,
+        "end": 1791632733.443291
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "104",
+          "task": "key-190",
+          "start": 1791632790.651635,
+          "end": 1791632790.6998022
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "104",
+          "task": "key-190",
+          "start": 1791632793.3781037,
+          "end": 1791632793.4081378
+        }
+      ]
+    },
+    {
+      "id": "b2-identical-01",
+      "arm": "identical",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "105",
+        "task": "key-193",
+        "start": 1791632850.1546578,
+        "end": 1791632850.2142146
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "106",
+          "task": "key-193",
+          "start": 1791632907.129127,
+          "end": 1791632907.2319052
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "106",
+          "task": "key-193",
+          "start": 1791632910.015197,
+          "end": 1791632910.0581775
+        }
+      ]
+    },
+    {
+      "id": "b2-tighten500-02",
+      "arm": "tighten500",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "106",
+        "task": "key-195",
+        "start": 1791632912.7110271,
+        "end": 1791632912.7689354
+      },
+      "probes": [
+        {
+          "outcome": "R",
+          "amount": 1,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "107",
+          "task": "key-195",
+          "start": 1791632969.8072438,
+          "end": 1791632969.8350399
+        },
+        {
+          "outcome": "R",
+          "amount": 50,
+          "used": 600,
+          "available": 0,
+          "limit": 500,
+          "revision": "107",
+          "task": "key-195",
+          "start": 1791632972.385593,
+          "end": 1791632972.4194365
+        }
+      ]
+    },
+    {
+      "id": "b2-rename_policy-02",
+      "arm": "rename_policy",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "108",
+        "task": "key-198",
+        "start": 1791633029.2520704,
+        "end": 1791633029.3149896
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 300,
+          "available": 700,
+          "limit": 1000,
+          "revision": "109",
+          "task": "key-198",
+          "start": 1791633086.036775,
+          "end": 1791633086.0988152
+        },
+        {
+          "outcome": "A",
+          "amount": 200,
+          "used": 500,
+          "available": 500,
+          "limit": 1000,
+          "revision": "109",
+          "task": "key-198",
+          "start": 1791633088.8132434,
+          "end": 1791633088.8779545
+        }
+      ]
+    },
+    {
+      "id": "b2-whitespace-03",
+      "arm": "whitespace",
+      "block": 2,
+      "status": "complete",
+      "preload": {
+        "outcome": "A",
+        "amount": 600,
+        "used": 600,
+        "available": 400,
+        "limit": 1000,
+        "revision": "110",
+        "task": "key-201",
+        "start": 1791633145.8265593,
+        "end": 1791633145.8801756
+      },
+      "probes": [
+        {
+          "outcome": "A",
+          "amount": 300,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "111",
+          "task": "key-201",
+          "start": 1791633202.5723734,
+          "end": 1791633202.6234648
+        },
+        {
+          "outcome": "R",
+          "amount": 200,
+          "used": 900,
+          "available": 100,
+          "limit": 1000,
+          "revision": "111",
+          "task": "key-201",
+          "start": 1791633205.3384724,
+          "end": 1791633205.3703866
+        }
+      ]
+    }
+  ]
+}

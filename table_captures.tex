@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{\EvidenceCaptureCount{} captures and their evidence kind. \EvidenceGraphCount{} include an analysable authority graph.}
+\label{tab:captures}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}l@{}}
+\toprule
+Deployment & Domain & Enforcement pattern & Pinned at & Kind \\ 
+\midrule
+Coinbase AgentKit & digital assets & framework capability gate & 0.1.6 $\rightarrow$ 0.7.4 & Static source \\
+GitHub MCP Server & software delivery & downstream service & 1.8.0 & Local runtime \\
+AWS PostgreSQL MCP Server & data systems & downstream service & 1.1.11 & Static source \\
+Sentry MCP Server & operations SaaS & tool implementation & 0.37.0 & Local runtime \\
+Initiative & work management & tool implementation & 0.63.4 & Local runtime \\
+Authorizer & identity & credential scope & 2.4.0 & Local runtime \\
+Amazon Bedrock AgentCore & cloud platform & gateway policy engine & CLI 0.28.1 / capture 2026-08-29 & \textbf{Live} \\
+AWS IAM MCP Server & cloud identity & downstream service & 1.0.11 & \textbf{Live} \\
+Anthropic Managed Agents & cloud platform & managed session budget & beta 2026-04-01 / SDK 1.2.0 / capture 2026-08-30 & \textbf{Live} \\
+\bottomrule
+\end{tabular}
+\end{table*}

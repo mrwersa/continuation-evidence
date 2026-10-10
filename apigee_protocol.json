@@ -1,0 +1,1752 @@
+{
+  "schema": 2,
+  "collection_date": "2026-10-10",
+  "seed": 20261009,
+  "runtime_version": "1-18-0-apigee-6",
+  "region": "europe-west2",
+  "window_expiry": 1791676800000,
+  "no_update_wait_seconds": 120,
+  "planned_sequences": 90,
+  "planned_core_calls": 250,
+  "planned_focal_updates": 60,
+  "nominal_promotions": 110,
+  "planned_blocks_are_independent_periods": false,
+  "setup_undeployed_imports": 1,
+  "tool_call_ceiling": 500,
+  "stop_rule": "Stop on technical uncertainty, preserve partial records, no retries or replacements",
+  "expected_statuses": {
+    "complete": 90
+  },
+  "schedule": [
+    {
+      "id": "b1-no_update-01",
+      "block": 1,
+      "arm": "no_update",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-004",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-05",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-005",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh700-05",
+      "block": 1,
+      "arm": "fresh700",
+      "repeat": 5,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-007",
+      "uses_parent_deployment": "b1-tighten700-05"
+    },
+    {
+      "id": "b1-tighten500-02",
+      "block": 1,
+      "arm": "tighten500",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-009",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-09",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 9,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-012",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-no_update-03",
+      "block": 1,
+      "arm": "no_update",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-015",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh1000-01",
+      "block": 1,
+      "arm": "fresh1000",
+      "repeat": 1,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-016",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-whitespace-02",
+      "block": 1,
+      "arm": "whitespace",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-017",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-no_update-05",
+      "block": 1,
+      "arm": "no_update",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-020",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-10",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 10,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-021",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-08",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 8,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-024",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-whitespace-04",
+      "block": 1,
+      "arm": "whitespace",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-027",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-04",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-030",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh700-04",
+      "block": 1,
+      "arm": "fresh700",
+      "repeat": 4,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-032",
+      "uses_parent_deployment": "b1-tighten700-04"
+    },
+    {
+      "id": "b1-identical-03",
+      "block": 1,
+      "arm": "identical",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-034",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-no_update-04",
+      "block": 1,
+      "arm": "no_update",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-036",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-rename_policy-02",
+      "block": 1,
+      "arm": "rename_policy",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-037",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-rename_policy-01",
+      "block": 1,
+      "arm": "rename_policy",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-040",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-02",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-043",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh700-02",
+      "block": 1,
+      "arm": "fresh700",
+      "repeat": 2,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-045",
+      "uses_parent_deployment": "b1-tighten700-02"
+    },
+    {
+      "id": "b1-no_update-02",
+      "block": 1,
+      "arm": "no_update",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-047",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-01",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-048",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh700-01",
+      "block": 1,
+      "arm": "fresh700",
+      "repeat": 1,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-050",
+      "uses_parent_deployment": "b1-tighten700-01"
+    },
+    {
+      "id": "b1-tighten700-06",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 6,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-052",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-rename_policy-05",
+      "block": 1,
+      "arm": "rename_policy",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-055",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-03",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-058",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh700-03",
+      "block": 1,
+      "arm": "fresh700",
+      "repeat": 3,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-060",
+      "uses_parent_deployment": "b1-tighten700-03"
+    },
+    {
+      "id": "b1-identical-05",
+      "block": 1,
+      "arm": "identical",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-062",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-whitespace-01",
+      "block": 1,
+      "arm": "whitespace",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-064",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten500-03",
+      "block": 1,
+      "arm": "tighten500",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-067",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh1000-03",
+      "block": 1,
+      "arm": "fresh1000",
+      "repeat": 3,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-070",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten500-04",
+      "block": 1,
+      "arm": "tighten500",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-071",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten500-01",
+      "block": 1,
+      "arm": "tighten500",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-074",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh1000-02",
+      "block": 1,
+      "arm": "fresh1000",
+      "repeat": 2,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-077",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-rename_policy-04",
+      "block": 1,
+      "arm": "rename_policy",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-078",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-rename_policy-03",
+      "block": 1,
+      "arm": "rename_policy",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-081",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-identical-02",
+      "block": 1,
+      "arm": "identical",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-084",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-whitespace-05",
+      "block": 1,
+      "arm": "whitespace",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-086",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh1000-04",
+      "block": 1,
+      "arm": "fresh1000",
+      "repeat": 4,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-089",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-fresh1000-05",
+      "block": 1,
+      "arm": "fresh1000",
+      "repeat": 5,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-090",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-identical-01",
+      "block": 1,
+      "arm": "identical",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-091",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten700-07",
+      "block": 1,
+      "arm": "tighten700",
+      "repeat": 7,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-093",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-identical-04",
+      "block": 1,
+      "arm": "identical",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-096",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-tighten500-05",
+      "block": 1,
+      "arm": "tighten500",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-098",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b1-whitespace-03",
+      "block": 1,
+      "arm": "whitespace",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-101",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-identical-03",
+      "block": 2,
+      "arm": "identical",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-104",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-01",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-106",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh700-01",
+      "block": 2,
+      "arm": "fresh700",
+      "repeat": 1,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-108",
+      "uses_parent_deployment": "b2-tighten700-01"
+    },
+    {
+      "id": "b2-fresh1000-04",
+      "block": 2,
+      "arm": "fresh1000",
+      "repeat": 4,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-110",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-no_update-03",
+      "block": 2,
+      "arm": "no_update",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-111",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-whitespace-02",
+      "block": 2,
+      "arm": "whitespace",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-112",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-03",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-115",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh700-03",
+      "block": 2,
+      "arm": "fresh700",
+      "repeat": 3,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-117",
+      "uses_parent_deployment": "b2-tighten700-03"
+    },
+    {
+      "id": "b2-rename_policy-05",
+      "block": 2,
+      "arm": "rename_policy",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-119",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-no_update-05",
+      "block": 2,
+      "arm": "no_update",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-122",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-no_update-02",
+      "block": 2,
+      "arm": "no_update",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-123",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-rename_policy-04",
+      "block": 2,
+      "arm": "rename_policy",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-124",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-identical-05",
+      "block": 2,
+      "arm": "identical",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-127",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-whitespace-05",
+      "block": 2,
+      "arm": "whitespace",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-129",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-whitespace-01",
+      "block": 2,
+      "arm": "whitespace",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-132",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh1000-02",
+      "block": 2,
+      "arm": "fresh1000",
+      "repeat": 2,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-135",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-identical-04",
+      "block": 2,
+      "arm": "identical",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-136",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-07",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 7,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-138",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-identical-02",
+      "block": 2,
+      "arm": "identical",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-141",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-04",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-143",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh700-04",
+      "block": 2,
+      "arm": "fresh700",
+      "repeat": 4,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-145",
+      "uses_parent_deployment": "b2-tighten700-04"
+    },
+    {
+      "id": "b2-tighten700-02",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-147",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh700-02",
+      "block": 2,
+      "arm": "fresh700",
+      "repeat": 2,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-149",
+      "uses_parent_deployment": "b2-tighten700-02"
+    },
+    {
+      "id": "b2-tighten700-09",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 9,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-151",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh1000-05",
+      "block": 2,
+      "arm": "fresh1000",
+      "repeat": 5,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-154",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-no_update-01",
+      "block": 2,
+      "arm": "no_update",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-155",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-05",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-156",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh700-05",
+      "block": 2,
+      "arm": "fresh700",
+      "repeat": 5,
+      "preload": [],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-158",
+      "uses_parent_deployment": "b2-tighten700-05"
+    },
+    {
+      "id": "b2-rename_policy-03",
+      "block": 2,
+      "arm": "rename_policy",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-160",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten500-04",
+      "block": 2,
+      "arm": "tighten500",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-163",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten500-05",
+      "block": 2,
+      "arm": "tighten500",
+      "repeat": 5,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-166",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh1000-01",
+      "block": 2,
+      "arm": "fresh1000",
+      "repeat": 1,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-169",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-fresh1000-03",
+      "block": 2,
+      "arm": "fresh1000",
+      "repeat": 3,
+      "preload": [],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "admit"
+      ],
+      "accounting_key": "key-170",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten500-01",
+      "block": 2,
+      "arm": "tighten500",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-171",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-no_update-04",
+      "block": 2,
+      "arm": "no_update",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": null,
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-174",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-06",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 6,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-175",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-10",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 10,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-178",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten500-03",
+      "block": 2,
+      "arm": "tighten500",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-181",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten700-08",
+      "block": 2,
+      "arm": "tighten700",
+      "repeat": 8,
+      "preload": [
+        600
+      ],
+      "probes": [
+        50,
+        100
+      ],
+      "focal_variant": "tighten700",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-184",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-rename_policy-01",
+      "block": 2,
+      "arm": "rename_policy",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-187",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-whitespace-04",
+      "block": 2,
+      "arm": "whitespace",
+      "repeat": 4,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-190",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-identical-01",
+      "block": 2,
+      "arm": "identical",
+      "repeat": 1,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "baseline",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-193",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-tighten500-02",
+      "block": 2,
+      "arm": "tighten500",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        1,
+        50
+      ],
+      "focal_variant": "tighten500",
+      "conformance_pattern": [
+        "refuse",
+        "refuse"
+      ],
+      "accounting_key": "key-195",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-rename_policy-02",
+      "block": 2,
+      "arm": "rename_policy",
+      "repeat": 2,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "rename_policy",
+      "conformance_pattern": null,
+      "accounting_key": "key-198",
+      "uses_parent_deployment": null
+    },
+    {
+      "id": "b2-whitespace-03",
+      "block": 2,
+      "arm": "whitespace",
+      "repeat": 3,
+      "preload": [
+        600
+      ],
+      "probes": [
+        300,
+        200
+      ],
+      "focal_variant": "whitespace",
+      "conformance_pattern": [
+        "admit",
+        "refuse"
+      ],
+      "accounting_key": "key-201",
+      "uses_parent_deployment": null
+    }
+  ]
+}

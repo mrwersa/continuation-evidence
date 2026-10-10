@@ -1,0 +1,920 @@
+{
+  "anthropic_session_budgets": [
+    {
+      "artifact_sha256": "7300038f4aeb13fc1b9b35c6a06b6eee9a86d0907bdc3a6af46fd8cc8b2819f7",
+      "binding": {
+        "managed_platform_verifies_binding": false,
+        "same_digest_and_principal": true
+      },
+      "cap_minor_units": 1,
+      "capture": "anthropic-managed-budget",
+      "multiagent": {
+        "concurrent_subagents_2": {
+          "all_trials_conformant": true,
+          "cost_distribution": {
+            "2": 9,
+            "3": 1
+          },
+          "requested_children": 2,
+          "trials": 10
+        },
+        "concurrent_subagents_4": {
+          "all_trials_conformant": true,
+          "cost_distribution": {
+            "4": 10
+          },
+          "requested_children": 4,
+          "trials": 10
+        },
+        "subagent_handoff": {
+          "all_trials_conformant": true,
+          "cost_distribution": {
+            "1": 4,
+            "2": 6
+          },
+          "requested_children": 1,
+          "trials": 10
+        }
+      },
+      "multiagent_common": {
+        "all_reached_budget": 30,
+        "all_refused_next_message": 30,
+        "children_created_and_running_before_any_child_idled_in_concurrent_cells": 20,
+        "trials": 30
+      },
+      "single_agent": {
+        "cap_revision": {
+          "consumed_cost_retained_immediately": 10,
+          "final_cost_distribution": {
+            "2": 9,
+            "3": 1
+          },
+          "trials": 10
+        },
+        "fresh_session_pairs": {
+          "aggregate_capacity_minor_units": 2,
+          "both_sessions_reached_cap": 10,
+          "trials": 10
+        },
+        "sequential": {
+          "reached_cap_and_refused_next_message": 10,
+          "trials": 10
+        }
+      },
+      "unsupported_cell": "agent revision cannot replace the saved agent version of an existing session"
+    }
+  ],
+  "authority_graph_count": 7,
+  "capture_count": 9,
+  "captures": [
+    {
+      "analysed_tool_count": 20,
+      "authority_graph": true,
+      "capture_kind": "static-source",
+      "captured_tool_count": 20,
+      "domain": "digital assets",
+      "enforcement_pattern": "framework capability gate",
+      "id": "agentkit",
+      "pinned_version": "0.1.6 -> 0.7.4",
+      "upstream_project": "Coinbase AgentKit"
+    },
+    {
+      "analysed_tool_count": 23,
+      "authority_graph": true,
+      "capture_kind": "local-runtime",
+      "captured_tool_count": 23,
+      "domain": "software delivery",
+      "enforcement_pattern": "downstream service",
+      "id": "github-mcp-server",
+      "pinned_version": "1.8.0",
+      "upstream_project": "GitHub MCP Server"
+    },
+    {
+      "analysed_tool_count": 7,
+      "authority_graph": true,
+      "capture_kind": "static-source",
+      "captured_tool_count": 7,
+      "domain": "data systems",
+      "enforcement_pattern": "downstream service",
+      "id": "aws-postgres-mcp",
+      "pinned_version": "1.1.11",
+      "upstream_project": "AWS PostgreSQL MCP Server"
+    },
+    {
+      "analysed_tool_count": 8,
+      "authority_graph": true,
+      "capture_kind": "local-runtime",
+      "captured_tool_count": 8,
+      "domain": "operations SaaS",
+      "enforcement_pattern": "tool implementation",
+      "id": "sentry-mcp",
+      "pinned_version": "0.37.0",
+      "upstream_project": "Sentry MCP Server"
+    },
+    {
+      "analysed_tool_count": 25,
+      "authority_graph": true,
+      "capture_kind": "local-runtime",
+      "captured_tool_count": 25,
+      "domain": "work management",
+      "enforcement_pattern": "tool implementation",
+      "id": "initiative-mcp",
+      "pinned_version": "0.63.4",
+      "upstream_project": "Initiative"
+    },
+    {
+      "analysed_tool_count": 0,
+      "authority_graph": false,
+      "capture_kind": "local-runtime",
+      "captured_tool_count": null,
+      "domain": "identity",
+      "enforcement_pattern": "credential scope",
+      "id": "authorizer-delegation",
+      "pinned_version": "2.4.0",
+      "upstream_project": "Authorizer"
+    },
+    {
+      "analysed_tool_count": 1,
+      "authority_graph": true,
+      "capture_kind": "managed-live",
+      "captured_tool_count": 1,
+      "domain": "cloud platform",
+      "enforcement_pattern": "gateway policy engine",
+      "id": "agentcore-refund-policy",
+      "pinned_version": "CLI 0.28.1 / capture 2026-08-29",
+      "upstream_project": "Amazon Bedrock AgentCore"
+    },
+    {
+      "analysed_tool_count": 1,
+      "authority_graph": true,
+      "capture_kind": "managed-live",
+      "captured_tool_count": 29,
+      "domain": "cloud identity",
+      "enforcement_pattern": "downstream service",
+      "id": "aws-iam-access-keys",
+      "pinned_version": "1.0.11",
+      "upstream_project": "AWS IAM MCP Server"
+    },
+    {
+      "analysed_tool_count": 0,
+      "authority_graph": false,
+      "capture_kind": "managed-live",
+      "captured_tool_count": 0,
+      "domain": "cloud platform",
+      "enforcement_pattern": "managed session budget",
+      "id": "anthropic-managed-budget",
+      "pinned_version": "beta 2026-04-01 / SDK 1.2.0 / capture 2026-08-30",
+      "upstream_project": "Anthropic Managed Agents"
+    }
+  ],
+  "correction_classification": {
+    "canonical_records": 21,
+    "class_counts": null,
+    "complete": false,
+    "reason": "legacy correction records lack canonical pre-study class labels",
+    "total_records": 42
+  },
+  "corrections": [
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "agentkit",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Asset arguments and invented producer anchors cannot express the real authority source.",
+      "id": "agentkit-001",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "agentkit",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Collateral-limited borrowing and one-to-one wrapping are represented as unbounded production.",
+      "id": "agentkit-002",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "agentkit",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Buying then selling is counted as gross spend although net exposure is approximately zero.",
+      "id": "agentkit-003",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "inventory-v074.json",
+      "capture": "agentkit",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Two providers declare get_balance and name-based manifest identity silently collapses one tool.",
+      "id": "agentkit-004",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "github-mcp-server",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Method-dispatch identifiers were guessed as produced authority scopes and removed.",
+      "id": "github-001",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "github-mcp-server",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Fork creation was downgraded from irreversible to a reversible write.",
+      "id": "github-002",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "github-mcp-server",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "A multi-file commit was downgraded from irreversible to a reversible write.",
+      "id": "github-003",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "github-mcp-server",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Workflow-file writes were reviewed as producers of workflow execution authority.",
+      "id": "github-004",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "aws-postgres-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "The write-enabled SQL tool was upgraded from read to irreversible because its argument determines the effect.",
+      "id": "postgres-001",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "aws-postgres-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Connection-state tools were corrected from irreversible to write and read effects.",
+      "id": "postgres-002",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "aws-postgres-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "All tools were changed to service principal because they spend configured AWS or database credentials.",
+      "id": "postgres-003",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "aws-postgres-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "A bearer job identifier was removed as a requirement while the producer's second output remains unrepresentable.",
+      "id": "postgres-004",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "scan-skeleton.yaml",
+      "capture": "sentry-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Caller-supplied bearer references were guessed as authority scopes and removed.",
+      "id": "sentry-001",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "sentry-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "Search result limits were not promoted into monetary ceilings.",
+      "id": "sentry-002",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "sentry-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "The fixed user token was represented as service principal while its owner and delegation remain lost.",
+      "id": "sentry-003",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "sentry-mcp",
+      "classes": [],
+      "classification_status": "missing",
+      "description": "The hidden dispatch meta-tool stayed irreversible because its argument selects mixed effects and approvals.",
+      "id": "sentry-004",
+      "reported_class": null
+    },
+    {
+      "affected_artifact": "scan-skeleton.yaml",
+      "capture": "initiative-mcp",
+      "classes": [
+        "source ambiguity"
+      ],
+      "classification_status": "canonical",
+      "description": "Caller-supplied guild and calendar identifiers were guessed as authority scopes.",
+      "id": "initiative-001",
+      "reported_class": "source ambiguity"
+    },
+    {
+      "affected_artifact": "scan-skeleton.yaml",
+      "capture": "initiative-mcp",
+      "classes": [
+        "source ambiguity"
+      ],
+      "classification_status": "canonical",
+      "description": "Result limits and custom-property values were guessed as monetary arguments.",
+      "id": "initiative-002",
+      "reported_class": "source ambiguity"
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "initiative-mcp",
+      "classes": [
+        "source ambiguity"
+      ],
+      "classification_status": "canonical",
+      "description": "Three GET-backed tools were corrected from irreversible to read effects.",
+      "id": "initiative-003",
+      "reported_class": "source ambiguity"
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "initiative-mcp",
+      "classes": [
+        "model gap"
+      ],
+      "classification_status": "canonical",
+      "description": "One move tool has reversible and destructive branches that a tool-level effect cannot separate.",
+      "id": "initiative-004",
+      "reported_class": "model gap"
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "initiative-mcp",
+      "classes": [
+        "deployment policy"
+      ],
+      "classification_status": "canonical",
+      "description": "Client-side approval prompts were removed because the server does not enforce them for every caller.",
+      "id": "initiative-005",
+      "reported_class": "deployment policy"
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "initiative-mcp",
+      "classes": [
+        "source ambiguity"
+      ],
+      "classification_status": "canonical",
+      "description": "Caller principals were retained after source review proved credential forwarding.",
+      "id": "initiative-006",
+      "reported_class": "source ambiguity"
+    },
+    {
+      "affected_artifact": "capture-delegation.mjs",
+      "capture": "authorizer-delegation",
+      "classes": [
+        "extractor defect"
+      ],
+      "classification_status": "canonical",
+      "description": "A backward clock step was masked as an undefined-token error and the adapter now preserves the HTTP failure.",
+      "id": "authorizer-001",
+      "reported_class": "extractor defect"
+    },
+    {
+      "affected_artifact": "capture.json",
+      "capture": "authorizer-delegation",
+      "classes": [
+        "model gap"
+      ],
+      "classification_status": "canonical",
+      "description": "Nested actor histories of depths one through four did not fit the single-actor provisional record.",
+      "id": "authorizer-002",
+      "reported_class": "model gap"
+    },
+    {
+      "affected_artifact": "capture.json",
+      "capture": "authorizer-delegation",
+      "classes": [
+        "model gap"
+      ],
+      "classification_status": "canonical",
+      "description": "Five-minute token validity did not fit date-granularity grant records.",
+      "id": "authorizer-003",
+      "reported_class": "model gap"
+    },
+    {
+      "affected_artifact": "capture.json",
+      "capture": "authorizer-delegation",
+      "classes": [
+        "source ambiguity",
+        "deployment policy"
+      ],
+      "classification_status": "canonical",
+      "description": "Issuer scopes and audience do not establish which tools or effects the deployment authorises.",
+      "id": "authorizer-004",
+      "reported_class": "source ambiguity / deployment policy"
+    },
+    {
+      "affected_artifact": "capture.json",
+      "capture": "authorizer-delegation",
+      "classes": [
+        "source ambiguity"
+      ],
+      "classification_status": "canonical",
+      "description": "Issuer-side rejection evidence does not prove resource-server validation.",
+      "id": "authorizer-005",
+      "reported_class": "source ambiguity"
+    },
+    {
+      "affected_artifact": "protocol-refusal.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "source ambiguity"
+      ],
+      "classification_status": "canonical",
+      "description": "The first requested MCP protocol version was unsupported and the advertised version was preserved.",
+      "id": "agentcore-001",
+      "reported_class": "source ambiguity"
+    },
+    {
+      "affected_artifact": "managed-state.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [],
+      "classification_status": "noncanonical",
+      "description": "A no-authorizer deployment could exercise policy but could not justify the principal mapping.",
+      "id": "agentcore-002",
+      "reported_class": "model/trust gap"
+    },
+    {
+      "affected_artifact": "capture-index.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [],
+      "classification_status": "noncanonical",
+      "description": "A capture holding two policies and lacking a final inventory record was excluded.",
+      "id": "agentcore-003",
+      "reported_class": "extractor/process defect"
+    },
+    {
+      "affected_artifact": "mapping.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "deployment policy"
+      ],
+      "classification_status": "canonical",
+      "description": "Two observed request values remain representative rather than a complete condition domain.",
+      "id": "agentcore-004",
+      "reported_class": "deployment policy"
+    },
+    {
+      "affected_artifact": "candidate-managed-oracle-v1.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [],
+      "classification_status": "noncanonical",
+      "description": "Evidence filenames were removed from enforcement identity while their bytes remain independently verified.",
+      "id": "agentcore-005",
+      "reported_class": "extractor/model defect"
+    },
+    {
+      "affected_artifact": "candidate-managed-state.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [],
+      "classification_status": "noncanonical",
+      "description": "Redeployment changed live resource identifiers and review retained only the logical binding.",
+      "id": "agentcore-006",
+      "reported_class": "deployment identity"
+    },
+    {
+      "affected_artifact": "controls-index.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "extractor defect"
+      ],
+      "classification_status": "canonical",
+      "description": "A no-op policy containing a literal backslash-n was invalid and excluded before capture.",
+      "id": "agentcore-007",
+      "reported_class": "extractor defect"
+    },
+    {
+      "affected_artifact": "binding-index.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "deployment policy"
+      ],
+      "classification_status": "canonical",
+      "description": "The first binding invocation exposed a missing Gateway-role workload-token permission; the permission was added narrowly before the evidence run.",
+      "id": "agentcore-008",
+      "reported_class": "deployment policy"
+    },
+    {
+      "affected_artifact": "binding-live-deployment-corrections.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "extractor defect"
+      ],
+      "classification_status": "canonical",
+      "description": "The first latency deployment passed a JSON wrapper where the CLI expected raw Cedar policy text; the failed deployment was excluded.",
+      "id": "agentcore-009",
+      "reported_class": "extractor defect"
+    },
+    {
+      "affected_artifact": "binding-live-deployment-corrections.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "extractor defect"
+      ],
+      "classification_status": "canonical",
+      "description": "The first latency target used a nonexistent Lambda handler name; the handler was corrected and a successful probe preceded measurement.",
+      "id": "agentcore-010",
+      "reported_class": "extractor defect"
+    },
+    {
+      "affected_artifact": "temporal-repetition-corrections.json",
+      "capture": "agentcore-refund-policy",
+      "classes": [
+        "extractor defect"
+      ],
+      "classification_status": "canonical",
+      "description": "The first repeated-binding parent process inspected its child envelope at the wrong level; the failed projection was excluded and the corrected classifier was rerun for all ten trials.",
+      "id": "agentcore-011",
+      "reported_class": "extractor defect"
+    },
+    {
+      "affected_artifact": "scan-skeleton.yaml",
+      "capture": "aws-iam-access-keys",
+      "classes": [
+        "extractor defect"
+      ],
+      "classification_status": "canonical",
+      "description": "The scanner sees neither the returned credential nor its finite cardinality.",
+      "id": "iam-001",
+      "reported_class": "extractor defect"
+    },
+    {
+      "affected_artifact": "capture.json",
+      "capture": "aws-iam-access-keys",
+      "classes": [],
+      "classification_status": "noncanonical",
+      "description": "The captured release returns credential material while the current release redacts it.",
+      "id": "iam-002",
+      "reported_class": "source/version ambiguity"
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "aws-iam-access-keys",
+      "classes": [
+        "model gap"
+      ],
+      "classification_status": "canonical",
+      "description": "Manifest v1 forces one binding or an unbounded series and cannot express the enforced maximum of two.",
+      "id": "iam-003",
+      "reported_class": "model gap"
+    },
+    {
+      "affected_artifact": "mandate.yaml",
+      "capture": "aws-iam-access-keys",
+      "classes": [
+        "deployment policy"
+      ],
+      "classification_status": "canonical",
+      "description": "The permissionless one-tool adapter and verified cleanup justify a reversible write only for this run.",
+      "id": "iam-004",
+      "reported_class": "deployment policy"
+    }
+  ],
+  "generated_at": "2026-08-30T00:20:00Z",
+  "live_comparisons": [
+    {
+      "analysis_wall_clock_ms": 9.474077,
+      "baseline_revision": "RefundIamUnderLimit",
+      "candidate_revision": "RefundIamCandidate",
+      "capture": "agentcore-refund-policy",
+      "counterexample_length": 1,
+      "instrumentation_status": "complete",
+      "measurement": {
+        "environment": {
+          "implementation": "CPython",
+          "machine": "x86_64",
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3"
+        },
+        "measured_at": "2026-08-29T20:07:22+01:00",
+        "repetitions": 1000,
+        "timing_definition": "median in-process compare_managed_cedar wall-clock time after input loading",
+        "warmups": 100
+      },
+      "requests": [
+        {
+          "arguments": {
+            "amount": 2000
+          },
+          "baseline": "deny",
+          "candidate": "allow",
+          "change": "widens"
+        },
+        {
+          "arguments": {
+            "amount": 500
+          },
+          "baseline": "allow",
+          "candidate": "allow",
+          "change": "stable_allow"
+        }
+      ]
+    }
+  ],
+  "managed_controls": [
+    {
+      "baseline_revision": "PaperBaselinePolicy",
+      "capture": "agentcore-refund-policy",
+      "comparisons": {
+        "narrow": [
+          "stable_deny",
+          "tightens"
+        ],
+        "noop": [
+          "stable_deny",
+          "stable_allow"
+        ]
+      },
+      "narrowing_revision": "PaperNarrowPolicy",
+      "noop_revision": "PaperNoOpPolicy",
+      "permitted_sequence": {
+        "aggregate_amount": 1200,
+        "calls": [
+          {
+            "amount": 600,
+            "id": "sequence-600-a",
+            "outcome": "allow"
+          },
+          {
+            "amount": 600,
+            "id": "sequence-600-b",
+            "outcome": "allow"
+          }
+        ],
+        "claim_boundary": "the managed policy enforces each request; it does not claim cumulative accounting",
+        "per_request_threshold": 1000,
+        "policy_revision": "PaperBaselinePolicy",
+        "sequence_version": 1
+      }
+    }
+  ],
+  "mandate_bindings": [
+    {
+      "capture": "agentcore-refund-policy",
+      "claim_boundary": "the trusted adapter held the Gateway credential and verified the binding before deriving the session; the managed Gateway did not verify the binding itself",
+      "different_signed_mandate": {
+        "calls": [
+          {
+            "id": "isolated-first",
+            "outcome": "allow"
+          }
+        ],
+        "derived_session_id_distinct": true
+      },
+      "live_latency": {
+        "adapter_only_median_ms": 13.602295,
+        "amount": 600,
+        "binding_live_latency_version": 1,
+        "committed_credentials": false,
+        "committed_live_identifiers": false,
+        "credential_path": "exclusive trusted adapter",
+        "end_to_end_maximum_ms": 628.521726,
+        "end_to_end_median_ms": 566.975384,
+        "end_to_end_minimum_ms": 484.438959,
+        "end_to_end_samples_ms": [
+          555.451023,
+          562.818916,
+          610.329439,
+          569.904885,
+          573.691131,
+          584.653725,
+          599.06505,
+          560.938989,
+          571.338233,
+          539.859502,
+          534.601565,
+          584.460509,
+          617.944626,
+          552.973964,
+          564.456519,
+          567.206862,
+          561.053886,
+          484.438959,
+          628.521726,
+          556.536757,
+          596.979993,
+          522.032046,
+          574.758492,
+          591.292552,
+          514.254892,
+          588.16732,
+          520.578486,
+          607.234996,
+          564.998564,
+          566.743905
+        ],
+        "environment": {
+          "botocore": "1.43.83",
+          "implementation": "CPython",
+          "openssl": "OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)",
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "protocol": "MCP 2025-03-26",
+          "python": "3.12.3",
+          "region": "us-east-1"
+        },
+        "gateway_verified_binding": false,
+        "independent_signed_mandates": 30,
+        "outcomes": [
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow",
+          "allow"
+        ],
+        "policy_session_identity": "derived from each signed mandate",
+        "ratio_of_adapter_only_median_to_end_to_end_median_percent": 2.399098,
+        "request_domain": "representative",
+        "samples": 30,
+        "timing_boundary": "binding verification and session derivation through complete managed Gateway response",
+        "tool_inventory": [
+          "BindingLatencyTarget___process_refund"
+        ],
+        "tool_inventory_complete": true,
+        "warmups": 5
+      },
+      "local_controls": [
+        {
+          "case": "tampered-binding",
+          "reason": "binding signature is not valid for the reviewed issuer",
+          "result": "rejected-before-network"
+        },
+        {
+          "case": "expired-binding",
+          "reason": "binding is not active at as_of",
+          "result": "rejected-before-network"
+        }
+      ],
+      "mandate_binding_evaluation_version": 1,
+      "median_adapter_ms": 13.602295,
+      "request_amount": 600,
+      "same_signed_mandate": {
+        "calls": [
+          {
+            "id": "bound-first",
+            "outcome": "allow"
+          },
+          {
+            "id": "bound-second",
+            "outcome": "deny"
+          }
+        ],
+        "derived_session_ids_equal": true,
+        "separate_client_processes": 2
+      },
+      "scheme": "Ed25519 signature over canonical binding fields; UUID-shaped session from SHA-256",
+      "threshold": 1000
+    }
+  ],
+  "summary_version": 1,
+  "temporal_repetitions": [
+    {
+      "binding_cells": {
+        "different_binding_allowed": 10,
+        "expired_rejected_before_network": 10,
+        "same_binding_allow_then_deny": 10,
+        "tampered_rejected_before_network": 10
+      },
+      "binding_policy_revision": {
+        "old_binding_session_rejected_as_stale": 10,
+        "same_mandate_across_revision_aggregate": 1200,
+        "successor_binding_session_allowed": 10
+      },
+      "capture": "agentcore-refund-policy",
+      "paired_latency": {
+        "claim_boundary": "paired randomized reference-path timing on one host, region, gateway, and inert tool; not a population estimate",
+        "median_bound_minus_unbound_ms": 0.8011319999999955,
+        "pairs": 30,
+        "q1_bound_minus_unbound_ms": -54.94211799999998,
+        "q3_bound_minus_unbound_ms": 45.14932324999998
+      },
+      "policy_updates": {
+        "fresh_recovery_allowed": 10,
+        "no_update_allow_then_deny": 10,
+        "old_session_rejected_as_stale": 10,
+        "recovery_aggregate_across_revisions": 1200,
+        "update_to_active_ms": {
+          "maximum": 8351.70747,
+          "median": 7219.415364,
+          "minimum": 4906.438311
+        }
+      },
+      "semantic_noop_revision": {
+        "alpha_equivalent_revision_changed": 10,
+        "byte_identical_revision_unchanged": 10,
+        "byte_identical_same_session_second_call": "deny",
+        "byte_identical_second_request_denied": 10,
+        "byte_identical_write_created_revision": false,
+        "description_only_revision_changed": true,
+        "description_only_statement_changed": false,
+        "fresh_successor_allow_then_deny": 21,
+        "maximum_transition_seconds": 15.377992,
+        "predecessor_session_rejected_as_stale": 21,
+        "whitespace_only_revision_changed": 10
+      },
+      "session_cells": {
+        "concurrent_exactly_one_allow": 10,
+        "concurrent_intervals_overlapped": 10,
+        "fresh_sessions_allow_then_allow": 10,
+        "same_session_allow_then_deny": 10
+      }
+    }
+  ],
+  "temporal_sessions": [
+    {
+      "capture": "agentcore-refund-policy",
+      "conformance": {
+        "authenticated_principal_binding": "configured-not-adversarially-tested",
+        "fresh_session_reset": "observed",
+        "multi_hop_continuity": "documented-not-live-tested",
+        "within_session_accumulation": "observed"
+      },
+      "finding": "the managed sum is correct within one policy session, while fresh caller-selected sessions reset the technical accounting boundary",
+      "fresh_sessions": {
+        "aggregate_across_sessions": 1200,
+        "calls": [
+          {
+            "id": "fresh-first",
+            "outcome": "allow"
+          },
+          {
+            "id": "fresh-second",
+            "outcome": "allow"
+          }
+        ],
+        "session_aliases": [
+          "fresh-a",
+          "fresh-b"
+        ]
+      },
+      "request_amount": 600,
+      "same_session": {
+        "attempted_aggregate": 1200,
+        "calls": [
+          {
+            "id": "same-first",
+            "outcome": "allow"
+          },
+          {
+            "id": "same-second",
+            "outcome": "deny"
+          }
+        ],
+        "permitted_aggregate": 600,
+        "session_alias": "same"
+      },
+      "threshold": 1000
+    }
+  ]
+}

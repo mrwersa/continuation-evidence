@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\small
+\caption{Apigee MCP sequences. Every sequence in an arm had the listed result: A is admission and R quota refusal. Requests and Used give the two probe amounts and the resulting native totals. All but fresh-key controls preload 600. Limits are 1,000 unless named.}
+\label{tab:apigee}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrcr@{}}
+\toprule
+Arm & Seq. & Requests & Result & Used \\
+\midrule
+No update & 10 & 300/200 & A/R & 900/900 \\
+Identical import & 10 & 300/200 & A/R & 900/900 \\
+Whitespace import & 10 & 300/200 & A/R & 900/900 \\
+Tighten to 700 & 20 & 50/100 & A/R & 650/650 \\
+Tighten to 500 & 10 & 1/50 & R/R & 600/600 \\
+Policy-name change & 10 & 300/200 & A/A & 300/500 \\
+Fresh key, 1,000 & 10 & 300/200 & A/A & 300/500 \\
+Fresh key, 700 & 10 & 50/100 & A/A & 50/150 \\
+\bottomrule
+\end{tabular}
+\end{table}
