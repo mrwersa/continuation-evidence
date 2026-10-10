@@ -1,0 +1,12 @@
+{
+  "title": "Artifact for A Session Is Not a Mandate: Safe Continuation for Agent Authorisation Across Policy Revisions",
+  "upload_type": "dataset",
+  "description": "<p>Sanitised provider records, policy inputs, generated results and offline models for the SSR 2026 paper <em>A Session Is Not a Mandate: Safe Continuation for Agent Authorisation Across Policy Revisions</em>. The study examines whether cumulative limits on AI agents survive policy revisions in Amazon Bedrock AgentCore, Google Apigee and Anthropic Managed Agents. All checks run offline with the Python standard library and need no cloud account.</p><p>Evidence, policy files, tables and documentation are licensed under CC BY 4.0. Python source code is licensed under the MIT License (see LICENSE).</p>",
+  "creators": [
+    {"name": "Aghaee, Saeed", "affiliation": "Independent Researcher"}
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["AI agent security", "authorisation", "cumulative limits", "policy revision", "Model Context Protocol"],
+  "version": "1.0.0",
+  "language": "eng"
+}
