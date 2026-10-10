@@ -169,9 +169,14 @@ under [CC BY 4.0](LICENSE-DATA). Please cite the paper when you reuse them.
 
 ## Citation
 
-If you use this artifact, please cite the paper. Release v1.0.0, the version
+If you use this artifact, please cite the paper. Release v1.1.0, the version
 described in the paper, is archived at
-[doi.org/10.5281/zenodo.23283296](https://doi.org/10.5281/zenodo.23283296).
+[doi.org/10.5281/zenodo.23284817](https://doi.org/10.5281/zenodo.23284817).
+It adds the live capture harnesses to v1.0.0
+([doi.org/10.5281/zenodo.23283296](https://doi.org/10.5281/zenodo.23283296)).
+A Zenodo record labelled 1.0.0 and created at 16:01 UTC on 10 October 2026
+(10.5281/zenodo.23284796) came from a release that was deleted at once. It
+has no harness, so cite v1.1.0 instead.
 The badge above uses the concept DOI, which always resolves to the latest
 release. GitHub's "Cite this
 repository" uses [CITATION.cff](CITATION.cff). Proceedings volume, pages and
