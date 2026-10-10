@@ -11,6 +11,7 @@ authors:
   - family-names: Aghaee
     given-names: Saeed
     affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0002-9666-1091"
 version: 1.0.0
 date-released: 2026-10-10
 license:
@@ -29,6 +30,7 @@ preferred-citation:
   authors:
     - family-names: Aghaee
       given-names: Saeed
+      orcid: "https://orcid.org/0009-0002-9666-1091"
   collection-title: "Security Standardisation Research (SSR 2026)"
   publisher:
     name: Springer
