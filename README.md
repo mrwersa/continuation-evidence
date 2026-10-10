@@ -10,7 +10,9 @@ The paper asks whether an agent's cumulative limit still accounts for earlier
 work after a policy revision. This repository contains the sanitised provider
 records, policy inputs, generated results and offline models used to examine
 that question. The checks use only the Python standard library. They require
-no cloud account, credentials or paid calls.
+no cloud account, credentials or paid calls. The live capture harnesses that
+collected the records are in [harness/](harness/README.md), for inspection and
+recapture in your own accounts.
 
 ## Contents
 
@@ -18,6 +20,7 @@ no cloud account, credentials or paid calls.
 - [Find the evidence for a result](#find-the-evidence-for-a-result)
 - [Repository structure](#repository-structure)
 - [Reading guides](#reading-guides)
+- [Live capture harnesses](#live-capture-harnesses)
 - [What the checks establish](#what-the-checks-establish)
 - [Contributing and repository protection](#contributing-and-repository-protection)
 - [Licence](#licence)
@@ -43,17 +46,20 @@ python3 verify_apigee.py
 python3 compare_recovery.py --check
 ```
 
-Run the scalar example and all 38 artifact tests:
+Run the scalar example and all 45 artifact tests:
 
 ```sh
 python3 continuation_model.py
 python3 -m unittest discover -s . -p 'test_scope.py' -v
 python3 -m unittest discover -s . -p 'test_coordinator.py' -v
 python3 -m unittest test_apigee -v
+python3 harness/check_harness.py
+python3 -m unittest discover -s harness -p 'test_harness.py' -v
 ```
 
-Successful verification commands print `PASS`. The three test suites contain
-5 scope tests, 17 coordinator tests and 16 Apigee tests. The scope tests include
+Successful verification commands print `PASS`. The four test suites contain
+5 scope tests, 17 coordinator tests, 16 Apigee tests and 7 harness-integrity
+tests. The scope tests include
 reproductions of the local scalar model's limitations. Their passing does not
 make that model a coordinated handover implementation.
 
@@ -89,6 +95,7 @@ continuation-evidence/
 ├── docs/
 │   ├── evidence-map.md       clickable index grouped by experiment
 │   └── guide.md              methods, checks and interpretation boundaries
+├── harness/                  live capture programs, provenance and integrity check
 ├── .github/
 │   ├── CODEOWNERS            maintainer ownership
 │   ├── scripts/              documentation-link checks and tests
@@ -115,6 +122,17 @@ their bytes or paths.
 - **Understand the offline implementation:** [Single-process coordinator](docs/guide.md#separate-single-process-coordinator).
 - **Inspect sanitisation and resource handling:** [Sanitisation](docs/guide.md#sanitisation) and [cloud resources](docs/guide.md#cloud-resources).
 
+## Live capture harnesses
+
+[harness/](harness/README.md) contains the programs that deployed the test
+fixtures and captured provider responses: the AgentCore single-permit matrix,
+configuration comparison and binding measurement, the Managed Agents cells and
+the complete Apigee execution. Each file's source commit and checksum is in
+[PROVENANCE.json](harness/PROVENANCE.json). The protocol and policy files they
+read are byte-identical to the released evidence. Running them creates billable
+resources in your own accounts. The AgentCore permit–forbid series and principal
+isolation control were collected with operator scripts that were not retained.
+
 ## What the checks establish
 
 The verifiers reconcile released records, check declared policy changes and
@@ -122,8 +140,9 @@ trial order, validate checksums and regenerate the reported outputs. They
 establish internal consistency of the sanitised evidence. They do not
 independently authenticate provider provenance or replay a live cloud service.
 
-Live recapture requires cloud accounts, provisioning and charges. The capture
-harnesses and source analysis implementation are outside this release. Some
+Live recapture requires cloud accounts, provisioning and charges. The
+[harness integrity check](harness/README.md#offline-integrity-check) verifies
+provenance and identity with the released inputs but runs no harness code. Some
 Managed Agents controls retain aggregate counts rather than per-trial records.
 The offline coordinator illustrates one trusted process, not a distributed or
 production enforcement system. See the [detailed boundaries](docs/guide.md#artifact-boundary)
@@ -132,7 +151,7 @@ and [file-by-file manifest](MANIFEST.md).
 ## Contributing and repository protection
 
 Changes go through a pull request and the **CI gate**, which runs the offline
-checks, all 38 artifact tests and the documentation-link tests. Evidence changes
+checks, all 45 artifact tests and the documentation-link tests. Evidence changes
 must explain their provenance and update any affected generated outputs and
 checksum indexes. Never include credentials or deployment identifiers.
 
@@ -144,7 +163,7 @@ has one maintainer who cannot approve their own pull request.
 
 ## Licence
 
-Python source code is licensed under the [MIT License](LICENSE). The evidence,
+Python and JavaScript source code is licensed under the [MIT License](LICENSE). The evidence,
 policy files, generated tables, checksum indexes and documentation are licensed
 under [CC BY 4.0](LICENSE-DATA). Please cite the paper when you reuse them.
 

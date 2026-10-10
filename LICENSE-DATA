@@ -11,5 +11,6 @@ credit, provide a link to the licence and indicate if changes were made.
 Licence summary: https://creativecommons.org/licenses/by/4.0/
 Legal code:      https://creativecommons.org/licenses/by/4.0/legalcode
 
-Python source code (*.py), including the repository automation scripts, is
-licensed separately under the MIT License in LICENSE.
+Python and JavaScript source code (*.py, *.js), including the repository
+automation scripts and capture harnesses, is licensed separately under the MIT
+License in LICENSE.

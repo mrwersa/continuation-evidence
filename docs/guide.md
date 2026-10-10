@@ -364,11 +364,12 @@ is noted in the gateway capture records.
 
 ## Artifact boundary
 
-The source analysis implementation and live capture harnesses are not included.
-The bundle instead contains the exact released inputs, sanitised managed events,
-derived summaries and offline checks. These checks establish internal
-consistency, not the provenance or completeness of the sanitised projections.
-The analysis implementation and capture harnesses are not part of this release.
+The live capture harnesses are in [harness/](../harness/README.md), with their
+source commits, checksums and run instructions. The AgentCore permit–forbid
+series and principal isolation control have no released live driver. The
+offline checks establish internal consistency of the sanitised projections,
+not their provenance or completeness, and the harness integrity check runs no
+harness code. The wider analysis implementation is not part of this release.
 
 Managed Agents exposes a managed cost cap rather than the Gateway's
 policy language. It replicates the session boundary, measures child-thread

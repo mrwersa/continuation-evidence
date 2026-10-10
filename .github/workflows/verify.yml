@@ -32,11 +32,13 @@ jobs:
           python3 verify_apigee.py
           python3 continuation_model.py
           python3 compare_recovery.py --check
+          python3 harness/check_harness.py
       - name: Run artifact tests
         run: |
           python3 -m unittest discover -s . -p 'test_scope.py' -v
           python3 -m unittest discover -s . -p 'test_coordinator.py' -v
           python3 -m unittest test_apigee -v
+          python3 -m unittest discover -s harness -p 'test_harness.py' -v
       - name: Check documentation links and link-checker tests
         run: |
           python3 .github/scripts/check_docs.py

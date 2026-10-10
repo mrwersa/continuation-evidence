@@ -6,13 +6,14 @@ abstract: >-
   Sanitised provider records, policy inputs, generated results and offline
   models for a study of whether cumulative limits on AI agents survive policy
   revisions in Amazon Bedrock AgentCore, Google Apigee and Anthropic Managed
-  Agents. All checks run offline with the Python standard library.
+  Agents. All checks run offline with the Python standard library. The live
+  capture harnesses are included with their source commits and checksums.
 authors:
   - family-names: Aghaee
     given-names: Saeed
     affiliation: Independent Researcher
     orcid: "https://orcid.org/0009-0002-9666-1091"
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-10-10
 license:
   - MIT
