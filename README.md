@@ -18,6 +18,7 @@ no cloud account, credentials or paid calls.
 - [Reading guides](#reading-guides)
 - [What the checks establish](#what-the-checks-establish)
 - [Contributing and repository protection](#contributing-and-repository-protection)
+- [Licence](#licence)
 - [Citation](#citation)
 
 ## Quick start
@@ -139,9 +140,16 @@ and resolved conversations, including for the owner. Force pushes and deletion
 of `main` are disabled. Required approval count is zero because the repository
 has one maintainer who cannot approve their own pull request.
 
+## Licence
+
+Python source code is licensed under the [MIT License](LICENSE). The evidence,
+policy files, generated tables, checksum indexes and documentation are licensed
+under [CC BY 4.0](LICENSE-DATA). Please cite the paper when you reuse them.
+
 ## Citation
 
-If you use this artifact, please cite the paper. Proceedings volume, pages and
+If you use this artifact, please cite the paper. GitHub's "Cite this
+repository" uses [CITATION.cff](CITATION.cff). Proceedings volume, pages and
 DOI can be added when the final bibliographic record is available.
 
 ```bibtex

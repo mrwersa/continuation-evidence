@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper below."
+type: dataset
+title: "Artifact for A Session Is Not a Mandate: Safe Continuation for Agent Authorisation Across Policy Revisions"
+abstract: >-
+  Sanitised provider records, policy inputs, generated results and offline
+  models for a study of whether cumulative limits on AI agents survive policy
+  revisions in Amazon Bedrock AgentCore, Google Apigee and Anthropic Managed
+  Agents. All checks run offline with the Python standard library.
+authors:
+  - family-names: Aghaee
+    given-names: Saeed
+    affiliation: Independent Researcher
+version: 1.0.0
+date-released: 2026-10-10
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/mrwersa/continuation-evidence"
+keywords:
+  - AI agent security
+  - authorisation
+  - cumulative limits
+  - policy revision
+  - Model Context Protocol
+preferred-citation:
+  type: conference-paper
+  title: "A Session Is Not a Mandate: Safe Continuation for Agent Authorisation Across Policy Revisions"
+  authors:
+    - family-names: Aghaee
+      given-names: Saeed
+  collection-title: "Security Standardisation Research (SSR 2026)"
+  publisher:
+    name: Springer
+  year: 2026
