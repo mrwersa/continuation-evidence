@@ -70,6 +70,13 @@ cost, cap updates, agent versions and native budget refusal can therefore be
 recomputed independently. The current manuscript uses the sequential,
 fresh-session, cap-raise, cap-change, agent-update, one-child and fanout cells.
 
+## Live capture harnesses
+
+| Files | Establish | Do not establish |
+|---|---|---|
+| `harness/agentcore/`, `harness/managed-agents/`, `harness/apigee/` | The programs, deployment steps, request construction and cleanup used for the covered captures, at the source commits in `harness/PROVENANCE.json` | That a rerun will reproduce the outcomes, or a live driver for the permit–forbid series and principal isolation control |
+| `harness/check_harness.py` and `harness/test_harness.py` | Released bytes match `PROVENANCE.json`, protocol and policy copies match the root evidence, the Apigee schedule matches `apigee_protocol.json`, and no credential or account pattern appears, with 7 mutation tests | That the harness runs correctly, because no harness code is executed |
+
 ## Writing tools not included
 
 The manuscript's prose checker is a writing tool, not evidence, so it is not

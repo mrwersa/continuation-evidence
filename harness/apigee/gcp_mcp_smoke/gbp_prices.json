@@ -1,0 +1,140 @@
+[
+  {
+    "name": "services/6F81-5844-456A/skus/0F2A-2FA8-3F6A",
+    "skuId": "0F2A-2FA8-3F6A",
+    "description": "E2 Instance Core running in London",
+    "category": {
+      "serviceDisplayName": "Compute Engine",
+      "resourceFamily": "Compute",
+      "resourceGroup": "CPU",
+      "usageType": "OnDemand"
+    },
+    "serviceRegions": [
+      "europe-west2"
+    ],
+    "pricingInfo": [
+      {
+        "summary": "",
+        "pricingExpression": {
+          "usageUnit": "h",
+          "displayQuantity": 1,
+          "tieredRates": [
+            {
+              "startUsageAmount": 0,
+              "unitPrice": {
+                "currencyCode": "GBP",
+                "units": "0",
+                "nanos": 21187379
+              }
+            }
+          ],
+          "usageUnitDescription": "hour",
+          "baseUnit": "s",
+          "baseUnitDescription": "second",
+          "baseUnitConversionFactor": 3600
+        },
+        "currencyConversionRate": 0.7538999999999085,
+        "effectiveTime": "2026-10-09T07:00:00Z"
+      }
+    ],
+    "serviceProviderName": "Google",
+    "geoTaxonomy": {
+      "type": "REGIONAL",
+      "regions": [
+        "europe-west2"
+      ]
+    }
+  },
+  {
+    "name": "services/6F81-5844-456A/skus/5D70-7762-2DE7",
+    "skuId": "5D70-7762-2DE7",
+    "description": "E2 Instance Ram running in London",
+    "category": {
+      "serviceDisplayName": "Compute Engine",
+      "resourceFamily": "Compute",
+      "resourceGroup": "RAM",
+      "usageType": "OnDemand"
+    },
+    "serviceRegions": [
+      "europe-west2"
+    ],
+    "pricingInfo": [
+      {
+        "summary": "",
+        "pricingExpression": {
+          "usageUnit": "GiBy.h",
+          "displayQuantity": 1,
+          "tieredRates": [
+            {
+              "startUsageAmount": 0,
+              "unitPrice": {
+                "currencyCode": "GBP",
+                "units": "0",
+                "nanos": 2839202
+              }
+            }
+          ],
+          "usageUnitDescription": "gibibyte hour",
+          "baseUnit": "By.s",
+          "baseUnitDescription": "byte second",
+          "baseUnitConversionFactor": 3865470566400
+        },
+        "currencyConversionRate": 0.7538999999999085,
+        "effectiveTime": "2026-10-09T07:00:00Z"
+      }
+    ],
+    "serviceProviderName": "Google",
+    "geoTaxonomy": {
+      "type": "REGIONAL",
+      "regions": [
+        "europe-west2"
+      ]
+    }
+  },
+  {
+    "name": "services/6F81-5844-456A/skus/BF1A-6647-009D",
+    "skuId": "BF1A-6647-009D",
+    "description": "Storage PD Capacity in London",
+    "category": {
+      "serviceDisplayName": "Compute Engine",
+      "resourceFamily": "Storage",
+      "resourceGroup": "PDStandard",
+      "usageType": "OnDemand"
+    },
+    "serviceRegions": [
+      "europe-west2"
+    ],
+    "pricingInfo": [
+      {
+        "summary": "",
+        "pricingExpression": {
+          "usageUnit": "GiBy.mo",
+          "displayQuantity": 1,
+          "tieredRates": [
+            {
+              "startUsageAmount": 0,
+              "unitPrice": {
+                "currencyCode": "GBP",
+                "units": "0",
+                "nanos": 36187199
+              }
+            }
+          ],
+          "usageUnitDescription": "gibibyte month",
+          "baseUnit": "By.s",
+          "baseUnitDescription": "byte second",
+          "baseUnitConversionFactor": 2875910101401600
+        },
+        "currencyConversionRate": 0.7538999999999085,
+        "effectiveTime": "2026-10-09T07:00:00Z"
+      }
+    ],
+    "serviceProviderName": "Google",
+    "geoTaxonomy": {
+      "type": "REGIONAL",
+      "regions": [
+        "europe-west2"
+      ]
+    }
+  }
+]

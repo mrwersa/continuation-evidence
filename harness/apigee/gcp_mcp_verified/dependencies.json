@@ -1,0 +1,16 @@
+{
+  "source_commit": "bdae7d73",
+  "sha256": {
+    "gcp_mcp_study/runner.py": "12698c06cd6c95b45ba5be31b8bb872ca3f31049a904d21f200d7d5028aaffd1",
+    "gcp_mcp_study/live.py": "bd1396889d8d0a160790f0d4cc56cdc1486f8706179baffbf502a5c9d6b3a301",
+    "gcp_mcp_study/remote_call.py": "97214e4633fa69a5a3a1146d4dd3e2ad9e2f833e68b602623d1ba18a81f8e747",
+    "gcp_mcp_study/bundles.py": "23ea1bb8a965342cbd7fecbe61954f025df9d3138265e547e5f66646c74c29cd",
+    "gcp_mcp_study/design.py": "dfe651bccefa6c0e3a8a0ec7359d40d015d4bdec88b13b25377a4d95863ad3ee",
+    "gcp_mcp_study/schedule.json": "a4ea8a60788bf8030040a3f5f499493abb910ae79978dca2e260742e503d44d2",
+    "gcp_mcp_study/test_runner.py": "0f3589aeffb4ac6b749ed7b6a4da007775fb7272792881fa851f12f586e72c49",
+    "gcp_mcp_study/test_transport.py": "f4dde815204489d41c09ee9a640cd1ce8ad6778250885ad7a251f49069341f0a",
+    "gcp_mcp_study/check_results.py": "e713634ed2bdf01bfe86dc2c3d6e9cdb439604c249f50a1e9dde82f65afadf4f",
+    "gcp_mcp_smoke/deployed_bundles.json": "29d3088b8f4bc165e5b33da974680cc19e456cd7c96c05a49af464838f32a8f0",
+    "gcp_mcp_smoke/server.py": "69fdbe2efb0469b6e117430c098fc6acf9dd3cd1407767a998314be453ac5749"
+  }
+}

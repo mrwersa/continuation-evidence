@@ -1,0 +1,553 @@
+{
+  "files": [
+    {
+      "path": "harness/agentcore/capture_continuation_live.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/capture_continuation_live.py",
+      "source_sha256": "f8ae19d9dde6b21859e3af7c9a63c2cc2148ecb1dc4663f4975e0eb8f6f06fb1",
+      "released_sha256": "f8ae19d9dde6b21859e3af7c9a63c2cc2148ecb1dc4663f4975e0eb8f6f06fb1"
+    },
+    {
+      "path": "harness/agentcore/project_continuation.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/project_continuation.py",
+      "source_sha256": "da2e830fe8994f5a8e5a40406f5642cb9289642e42d0800a232fd8c8b79f8347",
+      "released_sha256": "da2e830fe8994f5a8e5a40406f5642cb9289642e42d0800a232fd8c8b79f8347"
+    },
+    {
+      "path": "harness/agentcore/continuation-protocol.json",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-protocol.json",
+      "source_sha256": "0f7b530daac148fe745bda47f26228f5a96bd0db93d830661335b8b7add51591",
+      "released_sha256": "0f7b530daac148fe745bda47f26228f5a96bd0db93d830661335b8b7add51591"
+    },
+    {
+      "path": "harness/agentcore/continuation-diagnostic-protocol.json",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-diagnostic-protocol.json",
+      "source_sha256": "3f3496f8f684321eeaaefd7ecf2bae90a2677c9145539c413abad0b8222999f1",
+      "released_sha256": "3f3496f8f684321eeaaefd7ecf2bae90a2677c9145539c413abad0b8222999f1"
+    },
+    {
+      "path": "harness/agentcore/continuation-candidate-permit-a-700.dogwood",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-candidate-permit-a-700.dogwood",
+      "source_sha256": "8ad4f3d69582e9ee58fa24ee197a69af1f6a4b11a60ef0cf6920e6dfa7a731fe",
+      "released_sha256": "8ad4f3d69582e9ee58fa24ee197a69af1f6a4b11a60ef0cf6920e6dfa7a731fe"
+    },
+    {
+      "path": "harness/agentcore/continuation-candidate-permit-a.dogwood",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-candidate-permit-a.dogwood",
+      "source_sha256": "78aa0e50807d55a49cad1319ff2d595fe7ccacea9677e38db383303d7cde2616",
+      "released_sha256": "78aa0e50807d55a49cad1319ff2d595fe7ccacea9677e38db383303d7cde2616"
+    },
+    {
+      "path": "harness/agentcore/continuation-candidate-permit-b.dogwood",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-candidate-permit-b.dogwood",
+      "source_sha256": "eefe2a49962d0b17054a251eca348c577bb158cb1361d32bfba3dcd74a7ca120",
+      "released_sha256": "eefe2a49962d0b17054a251eca348c577bb158cb1361d32bfba3dcd74a7ca120"
+    },
+    {
+      "path": "harness/agentcore/continuation-forbid-a-700.dogwood",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-forbid-a-700.dogwood",
+      "source_sha256": "81788f4f4c59a609213bcab7ae2af997b9bf0cabf9dfc44c3c443ffc65a0f79a",
+      "released_sha256": "81788f4f4c59a609213bcab7ae2af997b9bf0cabf9dfc44c3c443ffc65a0f79a"
+    },
+    {
+      "path": "harness/agentcore/continuation-forbid-a.dogwood",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-forbid-a.dogwood",
+      "source_sha256": "29c7b7d31125d982b625b49517e7bd0aaa4f7f106ea9be095f5a9ed67d12bdb1",
+      "released_sha256": "29c7b7d31125d982b625b49517e7bd0aaa4f7f106ea9be095f5a9ed67d12bdb1"
+    },
+    {
+      "path": "harness/agentcore/continuation-forbid-b.dogwood",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-forbid-b.dogwood",
+      "source_sha256": "30eafdf63c291e715c1975b576badb458bff4b79c955d02abe352c08a77227bb",
+      "released_sha256": "30eafdf63c291e715c1975b576badb458bff4b79c955d02abe352c08a77227bb"
+    },
+    {
+      "path": "harness/agentcore/continuation-permit.cedar",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/continuation-permit.cedar",
+      "source_sha256": "b3d18e7d6f117af264b4a10a4a726961932b363b6c928bf5f502d9b4be4f7c1d",
+      "released_sha256": "b3d18e7d6f117af264b4a10a4a726961932b363b6c928bf5f502d9b4be4f7c1d"
+    },
+    {
+      "path": "harness/agentcore/mandate_binding.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/mandate_binding.py",
+      "source_sha256": "b5ed0aeef894a589aecad7940ffce32c9cf55f88390be135af44ca001bbb908b",
+      "released_sha256": "b5ed0aeef894a589aecad7940ffce32c9cf55f88390be135af44ca001bbb908b"
+    },
+    {
+      "path": "harness/agentcore/measure_binding_live.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/measure_binding_live.py",
+      "source_sha256": "51454358125399230967ab165c5e8c5f5afdf5248eeb46fd06ffa2b7d3fc58e1",
+      "released_sha256": "51454358125399230967ab165c5e8c5f5afdf5248eeb46fd06ffa2b7d3fc58e1"
+    },
+    {
+      "path": "harness/agentcore/requirements-binding-latency.txt",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/agentcore-refund-policy/requirements-binding-latency.txt",
+      "source_sha256": "3539ea966fb4c191bd3d849d1df13816a067d7b09615f20a71922e1806265580",
+      "released_sha256": "3539ea966fb4c191bd3d849d1df13816a067d7b09615f20a71922e1806265580"
+    },
+    {
+      "path": "harness/managed-agents/capture.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/capture.py",
+      "source_sha256": "7c734c0bd0a411533b0212abe51a925ad996ad721a52323d0a6653afaf8ba0d4",
+      "released_sha256": "7c734c0bd0a411533b0212abe51a925ad996ad721a52323d0a6653afaf8ba0d4"
+    },
+    {
+      "path": "harness/managed-agents/capture_continuation.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/capture_continuation.py",
+      "source_sha256": "048fd3fdf47f1af925a0954359fc391c2e55f4ddacf0ce05ac780f44952c60f2",
+      "released_sha256": "048fd3fdf47f1af925a0954359fc391c2e55f4ddacf0ce05ac780f44952c60f2"
+    },
+    {
+      "path": "harness/managed-agents/project_continuation.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/project_continuation.py",
+      "source_sha256": "ea657563589f5f373448ff4bbd04915e77a3b4b0c3060ff54c0c46f842229727",
+      "released_sha256": "ea657563589f5f373448ff4bbd04915e77a3b4b0c3060ff54c0c46f842229727"
+    },
+    {
+      "path": "harness/managed-agents/sanitize_confirmation.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/sanitize_confirmation.py",
+      "source_sha256": "e347e6a6661feda19a64e039dfa50da4f83149ecf888c8aed73255793f80d7d5",
+      "released_sha256": "e347e6a6661feda19a64e039dfa50da4f83149ecf888c8aed73255793f80d7d5"
+    },
+    {
+      "path": "harness/managed-agents/sanitize_multiagent.py",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/sanitize_multiagent.py",
+      "source_sha256": "1b2d2e9db27859aeb9d1d7b0f90d0f1724ed2e27f547e2a43bb146931ad05d20",
+      "released_sha256": "1b2d2e9db27859aeb9d1d7b0f90d0f1724ed2e27f547e2a43bb146931ad05d20"
+    },
+    {
+      "path": "harness/managed-agents/protocol.json",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/protocol.json",
+      "source_sha256": "5e7ad330270b36adce17c7b4e9f374ca2f03b548e1c251ab1b37eabb0a6a4001",
+      "released_sha256": "5e7ad330270b36adce17c7b4e9f374ca2f03b548e1c251ab1b37eabb0a6a4001"
+    },
+    {
+      "path": "harness/managed-agents/multiagent-protocol.json",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/multiagent-protocol.json",
+      "source_sha256": "b56802cd8a4be4ace4369750114c9808d2589e04b34e20527c69c1965819f16e",
+      "released_sha256": "b56802cd8a4be4ace4369750114c9808d2589e04b34e20527c69c1965819f16e"
+    },
+    {
+      "path": "harness/managed-agents/continuation-protocol.json",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/continuation-protocol.json",
+      "source_sha256": "956dfde27eec01bb3c9f1fe7524c9b105ba1531571592aae1e61075f2c2b3620",
+      "released_sha256": "956dfde27eec01bb3c9f1fe7524c9b105ba1531571592aae1e61075f2c2b3620"
+    },
+    {
+      "path": "harness/managed-agents/requirements-capture.txt",
+      "source_repository": "https://github.com/mrwersa/agentmandate",
+      "source_commit": "11d323302af1412eb83c07f498ff97b6db4946a8",
+      "source_path": "docs/evidence/anthropic-managed-budget/requirements-capture.txt",
+      "source_sha256": "c9ac09f67a62bc1b64be16bf7b08c06ed1feac56ce30c80e021de0c8695a165e",
+      "released_sha256": "c9ac09f67a62bc1b64be16bf7b08c06ed1feac56ce30c80e021de0c8695a165e"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/bundles.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/bundles.py",
+      "source_sha256": "23ea1bb8a965342cbd7fecbe61954f025df9d3138265e547e5f66646c74c29cd",
+      "released_sha256": "23ea1bb8a965342cbd7fecbe61954f025df9d3138265e547e5f66646c74c29cd"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/design.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/design.py",
+      "source_sha256": "dfe651bccefa6c0e3a8a0ec7359d40d015d4bdec88b13b25377a4d95863ad3ee",
+      "released_sha256": "dfe651bccefa6c0e3a8a0ec7359d40d015d4bdec88b13b25377a4d95863ad3ee"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/live.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/live.py",
+      "source_sha256": "7a4fcc344a0c90d813854394be0e2dad36fbd633bd56e7235533cdd496cf9726",
+      "released_sha256": "bd1396889d8d0a160790f0d4cc56cdc1486f8706179baffbf502a5c9d6b3a301",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/remote_call.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/remote_call.py",
+      "source_sha256": "97214e4633fa69a5a3a1146d4dd3e2ad9e2f833e68b602623d1ba18a81f8e747",
+      "released_sha256": "97214e4633fa69a5a3a1146d4dd3e2ad9e2f833e68b602623d1ba18a81f8e747"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/runner.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/runner.py",
+      "source_sha256": "12698c06cd6c95b45ba5be31b8bb872ca3f31049a904d21f200d7d5028aaffd1",
+      "released_sha256": "12698c06cd6c95b45ba5be31b8bb872ca3f31049a904d21f200d7d5028aaffd1"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/schedule.json",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/schedule.json",
+      "source_sha256": "a4ea8a60788bf8030040a3f5f499493abb910ae79978dca2e260742e503d44d2",
+      "released_sha256": "a4ea8a60788bf8030040a3f5f499493abb910ae79978dca2e260742e503d44d2"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/check_results.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/check_results.py",
+      "source_sha256": "e713634ed2bdf01bfe86dc2c3d6e9cdb439604c249f50a1e9dde82f65afadf4f",
+      "released_sha256": "e713634ed2bdf01bfe86dc2c3d6e9cdb439604c249f50a1e9dde82f65afadf4f"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/test_design.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/test_design.py",
+      "source_sha256": "aa291deeba14c33f3a8682f3c912c58e966297e6114f6d153248abd3e8f98c2f",
+      "released_sha256": "aa291deeba14c33f3a8682f3c912c58e966297e6114f6d153248abd3e8f98c2f"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/test_runner.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/test_runner.py",
+      "source_sha256": "0f3589aeffb4ac6b749ed7b6a4da007775fb7272792881fa851f12f586e72c49",
+      "released_sha256": "0f3589aeffb4ac6b749ed7b6a4da007775fb7272792881fa851f12f586e72c49"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_study/test_transport.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_study/test_transport.py",
+      "source_sha256": "7c7ae45529a0ff7cfc2be73e327f7368752dae41d31f4b5790a775eea5b2d830",
+      "released_sha256": "f4dde815204489d41c09ee9a640cd1ce8ad6778250885ad7a251f49069341f0a",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/audit_repeat.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/audit_repeat.py",
+      "source_sha256": "c4ea2df3b92e87e6d6cf5ab2cd833133d334f34aa0b0e394aa8d29e1b220cc4c",
+      "released_sha256": "c4ea2df3b92e87e6d6cf5ab2cd833133d334f34aa0b0e394aa8d29e1b220cc4c"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/cleanup.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/cleanup.py",
+      "source_sha256": "fda6030b568cd40f706bd9eb58771644a74ada948f46d4df61c2d700458e6c10",
+      "released_sha256": "27b046dacece9eda1ded09a2e8a5582fd40578190ef0e2668aee44ea67589bd3",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/contract_check.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/contract_check.py",
+      "source_sha256": "bc7199de259849af6d832e237b2313bfc0647c77b5b8350e6dbc8c9fe9a8d35a",
+      "released_sha256": "bc7199de259849af6d832e237b2313bfc0647c77b5b8350e6dbc8c9fe9a8d35a"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/credentials.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/credentials.py",
+      "source_sha256": "3d65fac6e61c373db9680d72a7c04028e09acb6997dbe96c2205b33615d92351",
+      "released_sha256": "cae891e37750cd399d721e7a2d4823c85b8f221ab4bf46566bf69e545f5407f2",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/dependencies.json",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/dependencies.json",
+      "source_sha256": "d3feea3dcfef679683cf4b85ebe7bc5b27fddc86870b0697c12177f1be3be442",
+      "released_sha256": "b830523b2a7d8939b24b0d5d35768cf91e67613fa684d7662949e36a0a194b38",
+      "substitution": "hashes re-pinned to the released bytes; unreleased entries removed: gcp_mcp_study/FREEZE.json, gcp_mcp_study/PROTOCOL.md"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/freeze_repeat.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/freeze_repeat.py",
+      "source_sha256": "4ee4677040c51533d3175edfac97d6b69159df3fba23dba09dd2c2aef70cc9d5",
+      "released_sha256": "4ee4677040c51533d3175edfac97d6b69159df3fba23dba09dd2c2aef70cc9d5"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/gcloud_command.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/gcloud_command.py",
+      "source_sha256": "2318f3d61d14bf54b3b11f601d680f923a7c549a2d59577a5ce75bb43ecde053",
+      "released_sha256": "7767a51c5ae050aa3182d359c07387dea74ca18fb5d4e97c9cd1427b0cebb849",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/integration.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/integration.py",
+      "source_sha256": "de404706bfaaf4986962c8d2a6fb7f50cb06eb2e8cbdc6e77d02e4a1215b59cd",
+      "released_sha256": "de404706bfaaf4986962c8d2a6fb7f50cb06eb2e8cbdc6e77d02e4a1215b59cd"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/live_repeat.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/live_repeat.py",
+      "source_sha256": "0edf90f81b94dd1bc844e00a28aff64b43004c990ebd4ff5f8ef538a03d127bc",
+      "released_sha256": "b56da5562fa2247b82394137d26628b038d50654afd384075490fa28c41e2cbf",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/manual_rehearsal.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/manual_rehearsal.py",
+      "source_sha256": "d27a8e7744b832f64ac1eb3a12256e90b5d60874e4b51ce9bf35bf566fd93e84",
+      "released_sha256": "d27a8e7744b832f64ac1eb3a12256e90b5d60874e4b51ce9bf35bf566fd93e84"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/operation_url.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/operation_url.py",
+      "source_sha256": "9fd53f71814fb2ee8574ff321e65663fb9cc0ab7099ee88477c99af672d48cfe",
+      "released_sha256": "761bbb7e15f2c3c3bfa9f78df0555962f29a5cb7d42482ab7994579def217624",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/readiness.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/readiness.py",
+      "source_sha256": "688759a26cade4e62e2a67b11867af161e13abcf76e4708d74628d8720127f1d",
+      "released_sha256": "688759a26cade4e62e2a67b11867af161e13abcf76e4708d74628d8720127f1d"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/remote_call.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/remote_call.py",
+      "source_sha256": "bffd71fc5728c06496f932f8f7ab14205d6f3a46da3edecbcfa4b64f29c07e12",
+      "released_sha256": "bffd71fc5728c06496f932f8f7ab14205d6f3a46da3edecbcfa4b64f29c07e12"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/repeat_runner.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/repeat_runner.py",
+      "source_sha256": "12459590b6def7674194644a9180df11498306edf4a2b3be305f1b5af0a86005",
+      "released_sha256": "5f892d32ce6dcf3f27a422168b8c28c643f7397361e2a3e3f302cb40340c0806",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/resources.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/resources.py",
+      "source_sha256": "4b2fbbb68798159732cf395260322bb83ee66a18ac256a478ed182e2c7aa5923",
+      "released_sha256": "8acd6f5d3c5f1c467ec4b9a140ff50fe4af48bdf65dfc27a66cc6022a9e9f6c1",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/setup_repeat.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/setup_repeat.py",
+      "source_sha256": "518888f7943fe0a319e16ce8de1422e60969468c5a73304a7b124e7b9b88f61c",
+      "released_sha256": "dfebf8fbd97413d72b339ac3890e29f1d4855260021240a41256786ae685e600",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/supervise.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/supervise.py",
+      "source_sha256": "745c70d20586ac38c049f55d0fed952459bc967e2deaf24da1a5c96f6e5fc568",
+      "released_sha256": "9a73ad4dd514cc590e43ba704d571067d0e5ad70a7cf74ea9ef164a8fc084786",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/task_keys.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/task_keys.py",
+      "source_sha256": "07c2e830fe160dfd0e32b0b47f86265069def459bf93b14381a91195b7da405c",
+      "released_sha256": "07c2e830fe160dfd0e32b0b47f86265069def459bf93b14381a91195b7da405c"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/validate_fixture.js",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/validate_fixture.js",
+      "source_sha256": "0cfa8d138ece443e5ededd7ae48f0714444c9d6e81ce19af44c2ceeaca968d92",
+      "released_sha256": "0cfa8d138ece443e5ededd7ae48f0714444c9d6e81ce19af44c2ceeaca968d92"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_command.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_command.py",
+      "source_sha256": "f6bf400aeec47aeb911c731dc642dd282102c70d353175b4532407cfe0518077",
+      "released_sha256": "f6bf400aeec47aeb911c731dc642dd282102c70d353175b4532407cfe0518077"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_contract.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_contract.py",
+      "source_sha256": "2758b3987ed6070076b035854da6b0ff2af61a6c23e33b3ad56de1370d2b58ea",
+      "released_sha256": "2758b3987ed6070076b035854da6b0ff2af61a6c23e33b3ad56de1370d2b58ea"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_credentials.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_credentials.py",
+      "source_sha256": "04a3f582ebac77621e8fc849777eb72b86bb4670a77421a1d8a3bc305535e8a1",
+      "released_sha256": "04a3f582ebac77621e8fc849777eb72b86bb4670a77421a1d8a3bc305535e8a1"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_integration.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_integration.py",
+      "source_sha256": "fdf74e0d6ec27c1fe62652e53c60dba5d838e4828b62558d4f704fa5fca601a4",
+      "released_sha256": "fdf74e0d6ec27c1fe62652e53c60dba5d838e4828b62558d4f704fa5fca601a4"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_repairs.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_repairs.py",
+      "source_sha256": "4089ed6b3d6298bdcd304a02dc310bb2a620649d0fa7a4d02d3359b4eabf4271",
+      "released_sha256": "0da2339d945eb3ffffaf965f7c1cc9d48b478b0da02f2780efe0187e70dbc95d",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_repeat_runner.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_repeat_runner.py",
+      "source_sha256": "9e185f1d8b61b649c9a0256ee1e498459651769eb9846359abd60075421ada43",
+      "released_sha256": "abaa2d042d38b82531da2e5f27761b33ed9de99b22cc238a56f2b1c639148b30",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_resources.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_resources.py",
+      "source_sha256": "29439f0c2e9b5f3597e58d0d717cfda7a0a5c747468eba460a4b138b07f69244",
+      "released_sha256": "29439f0c2e9b5f3597e58d0d717cfda7a0a5c747468eba460a4b138b07f69244"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/test_supervise.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_verified/test_supervise.py",
+      "source_sha256": "9cbad00f1270072b532eb4aeb14a1ef9ad36d904d26e5e411f4b58274ae212ff",
+      "released_sha256": "28ee9b46e0424854c0954d3b6e7a703f1bed0b9a4ee7916af08c764c9a52ccea",
+      "substitution": "Google Cloud project identifier -> your-gcp-project"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_smoke/server.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_smoke/server.py",
+      "source_sha256": "69fdbe2efb0469b6e117430c098fc6acf9dd3cd1407767a998314be453ac5749",
+      "released_sha256": "69fdbe2efb0469b6e117430c098fc6acf9dd3cd1407767a998314be453ac5749"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_smoke/build_bundle.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_smoke/build_bundle.py",
+      "source_sha256": "ab865e41a9e5848aabba3bf913615934fe689c8c0f31c363fa92ddb03c6dcbcc",
+      "released_sha256": "ab865e41a9e5848aabba3bf913615934fe689c8c0f31c363fa92ddb03c6dcbcc"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_smoke/client.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_smoke/client.py",
+      "source_sha256": "cf3382442a202e3c8d15c7351d54f3b623c42170ad69daeff6a3bccf45419ddf",
+      "released_sha256": "cf3382442a202e3c8d15c7351d54f3b623c42170ad69daeff6a3bccf45419ddf"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_smoke/deployed_bundles.json",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_smoke/deployed_bundles.json",
+      "source_sha256": "29d3088b8f4bc165e5b33da974680cc19e456cd7c96c05a49af464838f32a8f0",
+      "released_sha256": "29d3088b8f4bc165e5b33da974680cc19e456cd7c96c05a49af464838f32a8f0"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_smoke/gbp_prices.json",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_smoke/gbp_prices.json",
+      "source_sha256": "95a5afab0fef3160dd67f95a1e8b8621fe17bbc103ca2d2697bd7c75a6e1896d",
+      "released_sha256": "95a5afab0fef3160dd67f95a1e8b8621fe17bbc103ca2d2697bd7c75a6e1896d"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_smoke/test_fixture.py",
+      "source_repository": "private study repository (not public)",
+      "source_commit": "32c5cd5fbe2763498dbfac5fc443243ba68822f6",
+      "source_path": "authority/experiments/gcp_mcp_smoke/test_fixture.py",
+      "source_sha256": "3fd73ee57eb80c044402654994b72359062f9f782d52fc6f54a54cb9be5f3b90",
+      "released_sha256": "3fd73ee57eb80c044402654994b72359062f9f782d52fc6f54a54cb9be5f3b90"
+    },
+    {
+      "path": "harness/apigee/gcp_mcp_verified/PROTOCOL.md",
+      "source_repository": "new in this release",
+      "released_sha256": "9250935c30a510de7426b92ebc0855d5e295b74a615e6010b05b52fee2a497b0",
+      "substitution": "replaces the private protocol narrative, which freeze_repeat.py hashes"
+    }
+  ]
+}
