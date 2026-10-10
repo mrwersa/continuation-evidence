@@ -1,5 +1,7 @@
 # A Session Is Not a Mandate
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23283296.svg)](https://doi.org/10.5281/zenodo.23283296)
+
 Evidence and offline checks for **A Session Is Not a Mandate: Safe Continuation
 for Agent Authorisation Across Policy Revisions**, by Saeed Aghaee, accepted at
 Security Standardisation Research (SSR 2026).
@@ -148,7 +150,9 @@ under [CC BY 4.0](LICENSE-DATA). Please cite the paper when you reuse them.
 
 ## Citation
 
-If you use this artifact, please cite the paper. GitHub's "Cite this
+If you use this artifact, please cite the paper. Release v1.0.0, the version
+described in the paper, is archived at
+[doi.org/10.5281/zenodo.23283296](https://doi.org/10.5281/zenodo.23283296). GitHub's "Cite this
 repository" uses [CITATION.cff](CITATION.cff). Proceedings volume, pages and
 DOI can be added when the final bibliographic record is available.
 
